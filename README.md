@@ -1,4 +1,5 @@
 Example of use
+
             <?php
             /* sample using class.DhcpLeases.php */
 
