@@ -90,14 +90,14 @@ class DhcpdLeases {
                 elseif ($tok == "starts")           // start
                 {
                     strtok(" ");
-                    $arr['time_start']['date'] = strtok(" ");
-                    $arr['time_start']['hour'] = strtok(" ");
+                    $arr['time-start']['date'] = strtok(" ");
+                    $arr['time-start']['hour'] = strtok(";\n");
                 }
                 elseif ($tok == "ends")             // ends
                 {
                     strtok(" ");
-                    $arr['time_end']['date'] = strtok(" ");
-                    $arr['time_end']['hour'] = strtok(" ");
+                    $arr['time-end']['date'] = strtok(" ");
+                    $arr['time-end']['hour'] = strtok(";\n");
                 }
                 elseif ($tok == "hardware")         // hardware
                 {
@@ -138,11 +138,11 @@ class DhcpdLeases {
                     $tok = strtok(" ");
                     if ($tok == "agent.circuit-id")
                     {
-                       $arr['circuit_id'] = strtok("\";\n");
+                       $arr['circuit-id'] = strtok("\";\n");
                     }
                     if ($tok == "agent.remote-id")
                     {
-                       $arr['remote_id'] = strtok("\";\n");
+                       $arr['remote-id'] = strtok("\";\n");
                     }
                 }
                 elseif ($tok == "}\n")              // }
@@ -152,8 +152,8 @@ class DhcpdLeases {
 
                 // check 
                 if (isset($arr['ip']) &&
-                    isset($arr['time_start']) &&
-                    isset($arr['time_end']) &&
+                    isset($arr['time-start']) &&
+                    isset($arr['time-end']) &&
                     isset($arr['hw']) &&
                     isset($arr['next-binding-state']) &&
                     isset($arr['binding-state']) &&
