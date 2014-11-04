@@ -77,7 +77,7 @@ class DhcpdLeases {
      */
     function process()
     {
-	$row_len = 0;
+    $row_len = 0;
 
         if (!$this->fp)
             return false;
@@ -87,7 +87,7 @@ class DhcpdLeases {
             $read_line = fgets($this->fp, 4096);
             if (substr($read_line, 0, 1) != "#")
             {
-	            $tok = strtok($read_line, " ");
+                $tok = strtok($read_line, " ");
                 switch ($tok)
                 {
                     case "lease":      // lease <ip> {
