@@ -1,4 +1,3 @@
-
 <?php
 /**
  *  This file is part of class.DhcpLeases.php
@@ -19,28 +18,21 @@
  */
 
 /**
- * Example of returned array
+ * Example of return.
  *
- *   [0] => Array
- *   (
- *       [ip] => 210.243.29.123
- *       [time_start] => Array
- *           (
- *               [date] => 2014/11/03
- *               [hour] => 17:33:12;
- *           )
- *       [time_end] => Array
- *           (
- *               [date] => 2014/11/03
- *               [hour] => 17:43:12;
- *           )
- *       [binding-state] => active
- *       [next-binding-state] => free
- *       [hw] => 1c:65:20:b4:a7:aa
- *       [uid] => \001\234e\260\304\327\024
- *       [circuit-id] => WLAN:wlan3:a
- *       [client-hostname] => android-aa1be67476c410
- *   )
+ *   [
+ *       {
+ *           "ip": "136.53.29.7",
+ *           "time-start": "2014/11/03 17:33:12",
+ *           "time-end": "2014/11/03 17:43:12",
+ *           "binding-state": "active",
+ *           "next-binding-state": "free",
+ *           "hardware-ethernet": "9c:65:b0:c4:17:11",
+ *           "uid": "\\001\\234e\\260\\304\\327\\024",
+ *           "circuit-id": "\"Wsample",
+ *           "client-hostname": "samsung-tv-122344"
+ *       },
+ *   ]
  */
 
 class DhcpdLeases {
@@ -66,6 +58,12 @@ class DhcpdLeases {
             fclose($this->fp);
     }
 
+    /**
+     * the valid fields.
+     * 
+     * "ip", "time-start", "time-end", "binding-state", "next-binding-state", "hardware-ethernet"
+     * "uid", "circuit-id" and "client-hostname"
+     */
     function setFilter($field, $value)
     {
         $this->filter_field = $field;
@@ -77,8 +75,6 @@ class DhcpdLeases {
      */
     function process()
     {
-        $row_len = 0;
-
         if (!$this->fp)
             return false;
 
@@ -109,7 +105,7 @@ class DhcpdLeases {
                         $field = strtok(" ");
                         if ($field == "ethernet")
                         {
-                            $arr['hw'] = strtolower(strtok(";\n"));
+                            $arr['hardware-ethernet'] = strtolower(strtok(";\n"));
                         }
                         break;
 
@@ -160,7 +156,7 @@ class DhcpdLeases {
                 if (isset($arr['ip']) &&
                     isset($arr['time-start']) &&
                     isset($arr['time-end']) &&
-                    isset($arr['hw']) &&
+                    isset($arr['hardware-ethernet']) &&
                     isset($arr['next-binding-state']) &&
                     isset($arr['binding-state']) &&
                     isset($arr['client-hostname']) &&
@@ -168,23 +164,85 @@ class DhcpdLeases {
                     )
                 {
                     if ($this->filter_value == $arr[$this->filter_field])
-                        $this->row_array[$row_len++][] = $arr;
+                        $this->row_array[] = $arr;
                     elseif (!$this->filter_field && !$this->filter_value)
-                        $this->row_array[$row_len++][] = $arr;
+                        $this->row_array[] = $arr;
                 }
             }
         }
 
-        return $row_len;
+        return count($this->row_array);
     }
 
     /**
      * return array with all results
      */
-    function GetResult()
+    function GetResultArray()
     {
         return $this->row_array;
     }
+
+    /**
+     * return json with all results
+     */
+    function GetResultJson()
+    { 
+        if (function_exists('json_encode'))
+            return json_encode($this->row_array);
+
+        $parts = array(); 
+        $is_list = false; 
+
+        $keys = array_keys($this->row_array); 
+        $max_length = count($this->row_array)-1; 
+        if (($keys[0] == 0) and ($keys[$max_length] == $max_length))
+        {
+            $is_list = true; 
+            for ($i=0; $i < count($keys); $i++)
+            {
+                if ($i != $keys[$i])
+                {
+                    $is_list = false;
+                    break; 
+                } 
+            } 
+        } 
+
+        foreach ($this->row_array as $key=>$value)
+        { 
+            if (is_array($value))
+            {
+                if ($is_list)
+                    $parts[] = array2json($value); /* :RECURSION: */ 
+                else
+                    $parts[] = '"' . $key . '":' . array2json($value); /* :RECURSION: */ 
+            }
+            else
+            { 
+                $str = ''; 
+                if(!$is_list)
+                    $str = '"' . $key . '":'; 
+
+                // Custom handling for multiple data types 
+                if(is_numeric($value))
+                    $str .= $value;   // Numbers 
+                elseif($value === false)
+                    $str .= 'false'; // The booleans 
+                elseif($value === true)
+                    $str .= 'true'; 
+                else $str .= '"' . addslashes($value) . '"'; //All other things 
+                // :TODO: Is there any more datatype we should be in the lookout for? (Object?) 
+
+                $parts[] = $str; 
+            } 
+        } 
+        $json = implode(',',$parts); 
+         
+        if ($is_list)
+            return '[' . $json . ']'; // Return numerical JSON 
+
+        return '{' . $json . '}';     // Return associative JSON 
+    } 
 }
 
 ?>

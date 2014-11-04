@@ -1,0 +1,52 @@
+# Sample of /var/lib/dhcpd/dhcpd.leases
+lease 186.243.29.187 {
+  starts 1 2014/11/03 17:33:12;
+  ends 1 2014/11/03 17:43:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 9c:65:b0:c4:d7:11;
+  uid "\001\234e\260\304\327\024";
+  option agent.circuit-id "WLAN:wlan3:SSIDABC:";
+  client-hostname "android-ee1fe3641876c410";
+}
+lease 200.123.49.17 {
+  starts 1 2014/11/03 17:33:12;
+  ends 1 2014/11/03 17:43:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet ac:65:c0:c4:d7:18;
+  uid "\001\234e\260\304\327\024";
+  option agent.circuit-id "WLAN:wlan3:123";
+  option agent.remote-id "C4:10:8A:18:19:10";
+  client-hostname "ios-ee1fe3641876c410";
+}
+lease 12.13.29.7 {
+  starts 1 2014/11/03 17:33:12;
+  ends 1 2014/11/03 17:43:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 9c:65:b0:c4:d7:aa;
+  uid "\001\234e\260\304\327\024";
+  option agent.circuit-id "WLAN:wlan3:444::zf7363:OPERACOES:C4:10:8A:18:19:10";
+  client-hostname "android-ee1fe3641876c410";
+}
+lease 136.53.29.7 {
+  starts 1 2014/11/03 17:33:12;
+  ends 1 2014/11/03 17:43:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 9c:65:b0:c4:17:11;
+  uid "\001\234e\260\304\327\024";
+  option agent.circuit-id "Wsample de circuitid";
+  client-hostname "samsung-tv-122344";
+}
+lease 136.53.29.7 {
+  starts 1 2014/11/03 17:33:12;
+  ends 1 2014/11/03 17:43:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 9c:65:b0:c4:17:11;
+  uid "\001\234e\260\304\327\024";
+  option agent.circuit-id "Wsample de circuitid";
+  client-hostname "samsung-tv-122344";
+}
