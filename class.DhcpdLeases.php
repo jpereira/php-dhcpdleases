@@ -88,72 +88,73 @@ class DhcpdLeases {
             if (substr($read_line, 0, 1) != "#")
             {
 	            $tok = strtok($read_line, " ");
-                if ($tok == "lease")                // lease <ip> {
+                switch ($tok)
                 {
-                    unset($arr);
-                    $arr['ip'] = strtok(" ");
-                }
-                elseif ($tok == "starts")           // start
-                {
-                    strtok(" ");
-                    $arr['time-start']['date'] = strtok(" ");
-                    $arr['time-start']['hour'] = strtok(";\n");
-                }
-                elseif ($tok == "ends")             // ends
-                {
-                    strtok(" ");
-                    $arr['time-end']['date'] = strtok(" ");
-                    $arr['time-end']['hour'] = strtok(";\n");
-                }
-                elseif ($tok == "hardware")         // hardware
-                {
-                    $field = strtok(" ");
-                    if ($field == "ethernet")
-                    {
-                        $arr['hw'] = strtolower(strtok(";\n"));
-                    }
-                }
-                elseif ($tok == "next")             // next binding state:
-                {
-                    $tok = strtok(" ");
-                    if ($tok == "binding")
-                    {
+                    case "lease":      // lease <ip> {
+                        unset($arr);
+                        $arr['ip'] = strtok(" ");
+                        break;
+
+                    case "starts":    // start
+                        strtok(" ");
+                        $arr['time-start'] = strtok(" ") . " " . strtok(";\n");
+                        break;
+                    
+                    case "ends":      // ends
+                        strtok(" ");
+                        $arr['time-end'] = strtok(" ") . " " . strtok(";\n");
+                        break;
+
+                    case "hardware":  // hardware
+                        $field = strtok(" ");
+                        if ($field == "ethernet")
+                        {
+                            $arr['hw'] = strtolower(strtok(";\n"));
+                        }
+                        break;
+
+                    case "next":         // next binding state:
+                        $tok = strtok(" ");
+                        if ($tok == "binding")
+                        {
+                            $tok = strtok(" ");
+                            if ($tok == "state")
+                                $arr['next-binding-state'] = strtok(";\n");
+                        }
+                        break;
+
+                    case "binding":     // binding state:
                         $tok = strtok(" ");
                         if ($tok == "state")
-                            $arr['next-binding-state'] = strtok(";\n");
-                    }
-                }
-                elseif ($tok == "binding")          // binding state:
-                {
-                    $tok = strtok(" ");
-                    if ($tok == "state")
-                    {
-                        $arr['binding-state'] = strtok(";\n");
-                    }
-                }
-                elseif ($tok == "client-hostname")  // client-hostname
-                {
-                    $arr['client-hostname'] = strtok("\";\n");
-                }
-                elseif ($tok == "uid")              // uid
-                {
-                    $arr['uid'] = str_replace('"', "", strtok(";\n"));
-                }
-                elseif ($tok == "option")           // option { }
-                {
-                    $tok = strtok(" ");
-                    if ($tok == "agent.circuit-id")
-                    {
-                       $arr['circuit-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
-                    }
-                    if ($tok == "agent.remote-id")
-                    {
-                       $arr['remote-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
-                    }
-                }
-                elseif ($tok == "}\n")              // }
-                {
-                    unset($arr);
+                        {
+                            $arr['binding-state'] = strtok(";\n");
+                        }
+                        break;
+
+                    case "client-hostname":  // client-hostname
+                        $arr['client-hostname'] = strtok("\";\n");
+                        break;
+
+                    case "uid":              // uid
+                        $arr['uid'] = str_replace('"', "", strtok(";\n"));
+                        break;
+
+                    case "option":           // option { }
+                        $tok = strtok(" ");
+                        if ($tok == "agent.circuit-id")
+                        {
+                           $arr['circuit-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
+                        }
+
+                        if ($tok == "agent.remote-id")
+                        {
+                           $arr['remote-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
+                        }
+                        break;
+
+                    case "}\n":             // }
+                        unset($arr);
+                        break;
                 }
 
                 if (isset($arr['ip']) &&
