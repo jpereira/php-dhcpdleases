@@ -72,6 +72,9 @@ class DhcpdLeases {
         $this->filter_value = $value;
     }
     
+    /**
+     * return total of results
+     */
     function process()
     {
 	$row_len = 0;
@@ -171,9 +174,12 @@ class DhcpdLeases {
             }
         }
 
-        return count($this->row_array) > 0;
+        return count($this->row_array);
     }
 
+    /**
+     * return array with all results
+     */
     function GetResult()
     {
         return $this->row_array;
