@@ -21,11 +21,7 @@ require_once("class.DhcpdLeases.php");
 // main()
 $dl = new DhcpdLeases("dhcpd.leases.sample");
 
-$hw = @$_GET['hw'];
-if (empty($hw))
-    die("need to set \$_GET['hw']");
-
-$dl->setFilter("hardware-ethernet", strtolower($hw));
+$dl->setFilter("hardware-ethernet", strtolower("ac:65:c0:c4:d7:18"));
 
 if ($dl->process() < 1)
 {
@@ -36,3 +32,4 @@ else
     echo $dl->GetResultJson();
 }
 ?>
+
