@@ -1,3 +1,4 @@
+
 <?php
 /**
  *  This file is part of class.DhcpLeases.php
@@ -37,7 +38,7 @@
  *       [next-binding-state] => free
  *       [hw] => 1c:65:20:b4:a7:aa
  *       [uid] => \001\234e\260\304\327\024
- *       [circuit_id] => WLAN:wlan3:a
+ *       [circuit-id] => WLAN:wlan3:a
  *       [client-hostname] => android-aa1be67476c410
  *   )
  */
@@ -73,6 +74,8 @@ class DhcpdLeases {
     
     function process()
     {
+	$row_len = 0;
+
         if (!$this->fp)
             return false;
 
@@ -127,7 +130,7 @@ class DhcpdLeases {
                 }
                 elseif ($tok == "client-hostname")  // client-hostname
                 {
-                    $arr['client-hostname'] = str_replace('"', "", strtok(";\n"));
+                    $arr['client-hostname'] = strtok("\";\n");
                 }
                 elseif ($tok == "uid")              // uid
                 {
@@ -138,11 +141,11 @@ class DhcpdLeases {
                     $tok = strtok(" ");
                     if ($tok == "agent.circuit-id")
                     {
-                       $arr['circuit-id'] = strtok("\";\n");
+                       $arr['circuit-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
                     }
                     if ($tok == "agent.remote-id")
                     {
-                       $arr['remote-id'] = strtok("\";\n");
+                       $arr['remote-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
                     }
                 }
                 elseif ($tok == "}\n")              // }
@@ -150,7 +153,6 @@ class DhcpdLeases {
                     unset($arr);
                 }
 
-                // check 
                 if (isset($arr['ip']) &&
                     isset($arr['time-start']) &&
                     isset($arr['time-end']) &&
@@ -162,9 +164,9 @@ class DhcpdLeases {
                     )
                 {
                     if ($this->filter_value == $arr[$this->filter_field])
-                        $this->row_array[] = $arr;
+                        $this->row_array[$row_len++][] = $arr;
                     elseif (!$this->filter_field && !$this->filter_value)
-                        $this->row_array[] = $arr;
+                        $this->row_array[$row_len++][] = $arr;
                 }
             }
         }
@@ -179,3 +181,4 @@ class DhcpdLeases {
 }
 
 ?>
+
