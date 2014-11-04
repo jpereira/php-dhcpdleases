@@ -77,7 +77,7 @@ class DhcpdLeases {
      */
     function process()
     {
-    $row_len = 0;
+        $row_len = 0;
 
         if (!$this->fp)
             return false;
@@ -175,7 +175,7 @@ class DhcpdLeases {
             }
         }
 
-        return count($this->row_array);
+        return $row_len;
     }
 
     /**
