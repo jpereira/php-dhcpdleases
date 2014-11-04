@@ -5,11 +5,11 @@ Example of use
 
             require_once("class.DhcpdLeases.php");
 
-            $dl = new DhcpdLeases("dhcpd.leases");
+            $dl = new DhcpdLeases("/var/lib/dhcpd/dhcpd.leases");
 
             $dl->setFilter("hw", "1c:65:20:b4:a7:aa");
 
-            if (!$dl->process())
+            if ($dl->process() < 1)
             {
                 echo "Not Found!";
             }
