@@ -23,12 +23,15 @@ $dl = new DhcpdLeases("dhcpd.leases.sample");
 
 $dl->setFilter("hardware-ethernet", strtolower("ac:65:c0:c4:d7:18"));
 
+header("Content-Type: application/json");
+
 if ($dl->process() < 1)
 {
-    echo "Not Found!";
+    echo "{ status: \"error\", msg: \"not found\"; }";
 }
 else
 {
+    
     echo $dl->GetResultJson();
 }
 ?>
