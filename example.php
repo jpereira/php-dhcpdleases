@@ -27,7 +27,7 @@ header("Content-Type: application/json");
 
 if ($dl->process() < 1)
 {
-    echo "{ status: \"error\", msg: \"not found\"; }";
+    echo "{ status: \"error\", msg: \"not found\" }";
 }
 else
 {
