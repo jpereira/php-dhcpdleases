@@ -139,7 +139,8 @@ class DhcpdLeases {
                         $tok = strtok(" ");
                         if ($tok == "agent.circuit-id")
                         {
-                           $arr['circuit-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
+                           $arr['circuit-id'] = preg_replace('/"(.*)"\n/', '${1}', strtok("\n"));
+                           $arr['circuit-id'] = preg_replace('/(;|\")/', '', $arr['circuit-id']);
                         }
 
                         if ($tok == "agent.remote-id")
