@@ -163,10 +163,10 @@ class DhcpdLeases {
                     isset($arr['client-hostname']))
                     )
                 {
-                    if ($this->filter_value == $arr[$this->filter_field])
-                        $this->row_array[] = $arr;
-                    elseif (!$this->filter_field && !$this->filter_value)
-                        $this->row_array[] = $arr;
+                    if ($this->filter_value == $arr[$this->filter_field] ||
+                              !$this->filter_field && !$this->filter_value) {
+                        $this->row_array[] = str_replace("\n", "", $arr);
+                    }
                 }
             }
         }
