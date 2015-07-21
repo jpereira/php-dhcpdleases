@@ -7,7 +7,7 @@ Example of use
 
             $dl = new DhcpdLeases("dhcpd.leases.sample");
 
-            $dl->setFilter("hardware-ethernet", strtolower("9c:65:b0:c4:17:11"));
+            $dl->setFilter("hardware-ethernet", "9c:65:b0:c4:17:11");
 
             if ($dl->process() < 1)
             {

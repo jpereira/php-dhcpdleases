@@ -24,7 +24,7 @@ $dl = new DhcpdLeases("dhcpd.leases.sample");
 //$hw = $_GET['hw'];
 $hw = "ac:65:c0:c4:d7:18");
 
-$dl->setFilter("hardware-ethernet", strtolower($mac));
+$dl->setFilter("hardware-ethernet", $mac);
 
 header("Content-Type: application/json");
 
