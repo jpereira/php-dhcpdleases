@@ -66,8 +66,8 @@ class DhcpdLeases {
      */
     function setFilter($field, $value)
     {
-        $this->filter_field = $field;
-        $this->filter_value = $value;
+        $this->filter_field = strtolower($field);
+        $this->filter_value = strtolower($value);
     }
     
     /**
