@@ -41,6 +41,7 @@ class DhcpdLeases {
     var $row_array = array();
     var $filter_field = null;
     var $filter_value = null;
+	var $oder_by      = null;
 
     public function __construct($lease_file = null)
     {
@@ -69,7 +70,15 @@ class DhcpdLeases {
         $this->filter_field = strtolower($field);
         $this->filter_value = strtolower($value);
     }
-    
+
+	function setOrderField($order_by) {
+		$this->order_by = $order_by;
+	}
+
+	function __cmp($a, $b) {
+		return strcmp($a[$this->order_by], $b[$this->order_by]);
+	}
+
     /**
      * return total of results
      */
@@ -139,8 +148,8 @@ class DhcpdLeases {
                         $tok = strtok(" ");
                         if ($tok == "agent.circuit-id")
                         {
-                           $arr['circuit-id'] = preg_replace('/"(.*)"\n/', '${1}', strtok("\n"));
-                           $arr['circuit-id'] = preg_replace('/(;$|\")', '', $arr['circuit-id']);
+                           $arr['circuit-id'] = @preg_replace('/"(.*)"\n/', '${1}', strtok("\n"));
+                           $arr['circuit-id'] = @preg_replace('/(;$|\")', '', $arr['circuit-id']);
                         }
 
                         if ($tok == "agent.remote-id")
@@ -163,13 +172,17 @@ class DhcpdLeases {
                     isset($arr['client-hostname'])
                     )
                 {
-                    if ($this->filter_value == $arr[$this->filter_field] ||
+                    if ($this->filter_value == @$arr[$this->filter_field] ||
                               !$this->filter_field && !$this->filter_value) {
                         $this->row_array[] = str_replace("\n", "", $arr);
                     }
                 }
             }
         }
+
+		if ($this->order_by != null) {
+			usort($this->row_array, [$this, '__cmp']);
+		}
 
         return count($this->row_array);
     }
