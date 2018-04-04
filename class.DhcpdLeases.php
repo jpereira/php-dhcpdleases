@@ -89,6 +89,7 @@ class DhcpdLeases {
      */
     function process()
     {
+		$pos = 0;
         if (!$this->fp)
             return false;
 
@@ -150,38 +151,29 @@ class DhcpdLeases {
                         break;
 
                     case "option":           // option { }
+                    case "set":              // set { }
                         $tok = strtok(" ");
-                        if ($tok == "agent.circuit-id")
-                        {
-                           $arr['circuit-id'] = @preg_replace('/"(.*)"\n/', '${1}', strtok("\n"));
-                           $arr['circuit-id'] = @preg_replace('/(;$|\")', '', $arr['circuit-id']);
-                        }
+                        $val = strtok(" ");
+                        if ($val == "=") $val = strtok(" ");
 
-                        if ($tok == "agent.remote-id")
-                        {
-                           $arr['remote-id'] = preg_replace('/"(.*)";\n/', '${1}', strtok(" "));
-                        }
+                        $val_orig = $val;
+                        $arr[$tok] = preg_replace('/"?([^"].*[^"])"?;\n/', '${1}', $val);
+
                         break;
 
                     case "}\n":             // }
                         unset($arr);
+						$pos += 1;
                         break;
                 }
 
-                if (isset($arr['ip']) &&
-                    isset($arr['time-start']) &&
-                    isset($arr['time-end']) &&
-                    isset($arr['hardware-ethernet']) &&
-                    isset($arr['next-binding-state']) &&
-                    isset($arr['binding-state']) &&
-                    isset($arr['client-hostname'])
-                    )
-                {
-                    if ($this->filter_value == @$arr[$this->filter_field] ||
-                              !$this->filter_field && !$this->filter_value) {
-                        $this->row_array[] = str_replace("\n", "", $arr);
+                if ($this->filter_field && $this->filter_value) {
+                    if ($this->filter_value != $arr[$this->filter_field]) {
+                        continue;
                     }
                 }
+
+                $this->row_array[$pos] = str_replace("\n", "", $arr);
             }
         }
 
