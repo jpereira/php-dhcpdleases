@@ -160,7 +160,7 @@ class DhcpdLeases {
                     isset($arr['hardware-ethernet']) &&
                     isset($arr['next-binding-state']) &&
                     isset($arr['binding-state']) &&
-                    isset($arr['client-hostname']))
+                    isset($arr['client-hostname'])
                     )
                 {
                     if ($this->filter_value == $arr[$this->filter_field] ||
