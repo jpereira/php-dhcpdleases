@@ -21,20 +21,12 @@ require_once("class.DhcpdLeases.php");
 // main()
 $dl = new DhcpdLeases("dhcpd.leases.sample");
 
-//$hw = $_GET['hw'];
-$hw = "ac:65:c0:c4:d7:18");
-
-$dl->setFilter("hardware-ethernet", $mac);
-
 header("Content-Type: application/json");
 
-if ($dl->process() < 1)
-{
-    header("HTTP/1.0 404 Not Found", true, 404);)
+if ($dl->process() < 1) {
+    header("HTTP/1.0 404 Not Found", true, 404);
     echo "{ \"status\": \"error\", \"msg\": \"not found\" }";
-}
-else
-{
+} else {
     echo $dl->GetResultJson();
 }
 ?>
