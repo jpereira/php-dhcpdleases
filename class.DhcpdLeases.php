@@ -41,8 +41,8 @@ class DhcpdLeases {
     var $row_array = array();
     var $filter_field = null;
     var $filter_value = null;
-	var $oder_by      = null;
-	var $uniq_by      = null;
+    var $oder_by      = null;
+    var $uniq_by      = null;
 
     public function __construct($lease_file = null)
     {
@@ -72,24 +72,24 @@ class DhcpdLeases {
         $this->filter_value = strtolower($value);
     }
 
-	function setOrderField($order_by) {
-		$this->order_by = $order_by;
-	}
+    function setOrderField($order_by) {
+        $this->order_by = $order_by;
+    }
 
-	function setUniqKeysBy($uniq_by) {
-		$this->uniq_by = $uniq_by;
-	}
+    function setUniqKeysBy($uniq_by) {
+        $this->uniq_by = $uniq_by;
+    }
 
-	function __cmp($a, $b) {
-		return strcmp($a[$this->order_by], $b[$this->order_by]);
-	}
+    function __cmp($a, $b) {
+        return strcmp($a[$this->order_by], $b[$this->order_by]);
+    }
 
     /**
      * return total of results
      */
     function process()
     {
-		$pos = 0;
+        $pos = 0;
         if (!$this->fp)
             return false;
 
@@ -163,7 +163,7 @@ class DhcpdLeases {
 
                     case "}\n":             // }
                         unset($arr);
-						$pos += 1;
+                        $pos += 1;
                         break;
                 }
 
@@ -177,18 +177,18 @@ class DhcpdLeases {
             }
         }
 
-		if ($this->order_by != null) {
-			usort($this->row_array, [$this, '__cmp']);
-		}
+        if ($this->order_by != null) {
+            usort($this->row_array, [$this, '__cmp']);
+        }
 
-		if ($this->uniq_by != null) {
-			if (($arrTmp = array_column($this->row_array, $this->uniq_by)) == null) {
-				echo "error: The field '$this->uniq_by' does not exist in the informed array";
-				return -1;
-			}
+        if ($this->uniq_by != null) {
+            if (($arrTmp = array_column($this->row_array, $this->uniq_by)) == null) {
+                echo "error: The field '$this->uniq_by' does not exist in the informed array";
+                return -1;
+            }
 
-			$this->row_array = array_intersect_key($this->row_array, array_unique($arrTmp));
-		}
+            $this->row_array = array_intersect_key($this->row_array, array_unique($arrTmp));
+        }
 
         return count($this->row_array);
     }
