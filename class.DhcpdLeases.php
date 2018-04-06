@@ -36,12 +36,11 @@
  */
 
 class DhcpdLeases {
-    var $lease_file = "/var/lib/dhcpd/dhcpd.leases";
-    var $fp = -1;
-    var $row_array = array();
+    var $lease_file   = "/var/lib/dhcpd/dhcpd.leases";
+    var $row_array    = array();
     var $filter_field = null;
     var $filter_value = null;
-    var $oder_by      = null;
+    var $order_by     = null;
     var $uniq_by      = null;
 
     public function __construct($lease_file = null)
@@ -49,15 +48,13 @@ class DhcpdLeases {
         if ($lease_file != null)
             $this->lease_file = $lease_file;
 
-        $this->fp = @fopen($this->lease_file, "r");
-        if (!$this->fp)
+        if (!file_exists($this->lease_file))
             die("new DhcpdLeases(): No such file or directory in \"" . $this->lease_file . "\"");
     }
 
     public function __destruct()
     {
-        if ($this->fp != null)
-            fclose($this->fp);
+
     }
 
     /**
@@ -80,105 +77,72 @@ class DhcpdLeases {
         $this->uniq_by = $uniq_by;
     }
 
-    function __cmp($a, $b) {
-        return strcmp($a[$this->order_by], $b[$this->order_by]);
-    }
-
     /**
      * return total of results
      */
     function process()
     {
-        $pos = 0;
-        if (!$this->fp)
-            return false;
+        $contents = file_get_contents($this->lease_file);
+        $contents = explode("\n", $contents);
+        $current  = 0;
 
-        while (!feof($this->fp))
-        {
-            $read_line = fgets($this->fp, 4096);
-            if (substr($read_line, 0, 1) != "#")
-            {
-                $tok = strtok($read_line, " ");
-                switch ($tok)
-                {
-                    case "lease":      // lease <ip> {
-                        unset($arr);
-                        $arr['ip'] = strtok(" ");
-                        break;
-
-                    case "starts":    // start
-                        strtok(" ");
-                        $arr['time-start'] = strtok(" ") . " " . strtok(";\n");
-                        break;
-                    
-                    case "ends":      // ends
-                        strtok(" ");
-                        $arr['time-end'] = strtok(" ") . " " . strtok(";\n");
-                        break;
-
-                    case "hardware":  // hardware
-                        $field = strtok(" ");
-                        if ($field == "ethernet")
-                        {
-                            $arr['hardware-ethernet'] = strtolower(strtok(";\n"));
-                        }
-                        break;
-
-                    case "next":         // next binding state:
-                        $tok = strtok(" ");
-                        if ($tok == "binding")
-                        {
-                            $tok = strtok(" ");
-                            if ($tok == "state")
-                                $arr['next-binding-state'] = strtok(";\n");
-                        }
-                        break;
-
-                    case "binding":     // binding state:
-                        $tok = strtok(" ");
-                        if ($tok == "state")
-                        {
-                            $arr['binding-state'] = strtok(";\n");
-                        }
-                        break;
-
-                    case "client-hostname":  // client-hostname
-                        $arr['client-hostname'] = strtok("\";\n");
-                        break;
-
-                    case "uid":              // uid
-                        $arr['uid'] = str_replace('"', "", strtok(";\n"));
-                        break;
-
-                    case "option":           // option { }
-                    case "set":              // set { }
-                        $tok = strtok(" ");
-                        $val = strtok(" ");
-                        if ($val == "=") $val = strtok(" ");
-
-                        $val_orig = $val;
-                        $arr[$tok] = preg_replace('/"?([^"].*[^"])"?;\n/', '${1}', $val);
-
-                        break;
-
-                    case "}\n":             // }
-                        unset($arr);
-                        $pos += 1;
-                        break;
-                }
-
-                if ($this->filter_field && $this->filter_value) {
-                    if ($this->filter_value != $arr[$this->filter_field]) {
+        foreach ($contents as $line) {
+            switch ($current) {
+                case 0:
+                    if (preg_match("/^\s*(|#.*)$/", $line, $m)) {
                         continue;
+                    } else if (preg_match("/^lease (.*) {/", $line, $m)) {
+                        $current = $m[1];
+                    } else if (preg_match("/^(server-duid|authoring-byte-order)/", $line)) {
+                        continue;
+                    } else {
+                        print "Failed parsing '$line'\n";
+                    }
+                    break;
+
+                default: {
+                    if (preg_match("/^\s*([a-zA-Z0-9\-\.]+) (.*);$/", $line, $m)) {
+                        switch ($m[1]) {
+                            case "hardware":
+                                $h = explode(" ", $m[2]);
+                                $m[1] = $m[1] . "-" . $h[0];
+                                $m[2] = $h[1];
+                            break;
+
+                            case "set";
+                            case "option";
+                                if (!preg_match("/^\s*([a-zA-Z0-9\-\.]+)\s*[=]? (.*)$/", $m[2], $t)) {
+                                    continue;
+                                }
+                                $m = $t;
+                            break;
+                        }
+
+                        $m[2] = trim($m[2], '"');
+                        if ($this->filter_field && $this->filter_value) {
+
+                            if ($this->filter_value != $m[1]) {
+                                //echo "TESTANDO: (".$this->filter_value." == ".$m[2].")<br>";
+                                //continue;
+                            }
+                        }
+
+                        $this->row_array[$current][$m[1]] = $m[2];
+                    } elseif (preg_match("/}/", $line, $m)) {
+                        $current = 0;
+                    } else {
+                        print "Failed parsing '$line'\n";
                     }
                 }
-
-                $this->row_array[$pos] = str_replace("\n", "", $arr);
             }
         }
 
         if ($this->order_by != null) {
-            usort($this->row_array, [$this, '__cmp']);
+            asort($this->row_array, function($a, $b) {
+                return strcmp($a[$this->order_by], $b[$this->order_by]);
+            });
+        } else {
+            ksort($this->row_array);
         }
 
         if ($this->uniq_by != null) {
