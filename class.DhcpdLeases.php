@@ -169,68 +169,8 @@ class DhcpdLeases {
      * return json with all results
      */
     function GetResultJson()
-    { 
-        if (function_exists("json_encode"))
-            return json_encode($this->row_array);
-        else
-            return $this->wrapper_array2json($this->row_array);
-    }
-
-    /**
-     * wrapper used to convert array to json
-     */
-    private function wrapper_array2json($arr)
-    { 
-        $parts = array(); 
-        $is_list = false; 
-        $keys = array_keys($arr); 
-        $max_length = count($arr) - 1;
-
-        if(($keys[0] == 0) and ($keys[$max_length] == $max_length))
-        {
-            $is_list = true;
-            for($i=0; $i < count($keys); $i++)
-            {
-                if($i != $keys[$i])
-                {
-                    $is_list = false;
-                    break;
-                }
-            }
-        }
-
-        foreach($arr as $key=>$value)
-        { 
-            if(is_array($value))
-            {
-                if ($is_list)
-                    $parts[] = $this->wrapper_array2json($value);
-                else
-                    $parts[] = '"' . $key . '":' . $this->wrapper_array2json($value);
-            }
-            else
-            { 
-                $str = ''; 
-                if(!$is_list)
-                    $str = '"' . $key . '":'; 
-
-                if(is_numeric($value))
-                    $str .= $value;
-                elseif($value === false)
-                    $str .= 'false';
-                elseif($value === true)
-                    $str .= 'true'; 
-                else
-                    $str .= '"' . addslashes($value) . '"';
-                // :TODO: Is there any more datatype we should be in the lookout for? (Object?) 
-                $parts[] = $str; 
-            } 
-        } 
-        $json = implode(',',$parts); 
-         
-        if ($is_list)
-            return '[' . $json . ']';
-        return '{' . $json . '}';
+    {
+        return json_encode($this->row_array);
     }
 } /* class DhcpdLeases */
 ?>
