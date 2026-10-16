@@ -1,0 +1,7 @@
+# Keep dist archives (composer) small
+/.github        export-ignore
+/.gitattributes export-ignore
+/examples       export-ignore
+/tests          export-ignore
+/scripts        export-ignore
+/Makefile       export-ignore

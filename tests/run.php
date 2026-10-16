@@ -125,5 +125,8 @@ try {
     check('missing file throws', true);
 }
 
+check('version is semver and matches VERSION', preg_match('/^\d+\.\d+\.\d+$/', DhcpdLeases::version()) === 1
+    && DhcpdLeases::version() === trim(file_get_contents(__DIR__ . '/../VERSION')));
+
 echo "\n" . ($total - $failed) . "/$total passed\n";
 exit($failed === 0 ? 0 : 1);

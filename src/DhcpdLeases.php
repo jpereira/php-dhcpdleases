@@ -64,6 +64,14 @@ final class DhcpdLeases implements Countable, JsonSerializable
     ) {
     }
 
+    /** Library version, read from the VERSION file at the project root. */
+    public static function version(): string
+    {
+        $version = @file_get_contents(__DIR__ . '/../VERSION');
+
+        return $version === false ? 'unknown' : trim($version);
+    }
+
     /** Build from the raw text instead of a file. */
     public static function fromString(string $contents): self
     {

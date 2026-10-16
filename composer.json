@@ -3,8 +3,33 @@
     "description": "Parser for ISC dhcpd.leases files",
     "type": "library",
     "license": "LGPL-3.0-or-later",
-    "authors": [{"name": "Jorge Pereira", "email": "jpereiran@gmail.com"}],
-    "require": {"php": ">=8.2"},
-    "autoload": {"psr-4": {"Jpereira\\DhcpdLeases\\": "src/"}},
-    "scripts": {"test": "php tests/run.php"}
+    "authors": [
+        {
+            "name": "Jorge Pereira",
+            "email": "jpereiran@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jpereira\\DhcpdLeases\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "keywords": [
+        "dhcp",
+        "dhcpd",
+        "isc-dhcp",
+        "leases",
+        "parser"
+    ],
+    "homepage": "https://github.com/jpereira/php-dhcpdleases",
+    "support": {
+        "issues": "https://github.com/jpereira/php-dhcpdleases/issues",
+        "source": "https://github.com/jpereira/php-dhcpdleases"
+    }
 }

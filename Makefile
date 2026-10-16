@@ -3,7 +3,7 @@ PHP_IMAGE  ?= php:8.4-cli
 
 .DEFAULT_GOAL := help
 
-.PHONY: help test test-docker example
+.PHONY: help test test-docker example version bump
 
 help: ## Mostra esta ajuda
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  %-14s %s\n", $$1, $$2}'
@@ -16,3 +16,9 @@ test-docker: ## Roda os testes num container $(PHP_IMAGE)
 
 example: ## Roda o exemplo JSON com o dhcpd.leases.sample
 	@$(PHP) examples/json.php dhcpd.leases.sample
+
+version: ## Mostra a versao atual (arquivo VERSION)
+	@cat VERSION
+
+bump: ## Sobe a versao: make bump PART=patch|minor|major|X.Y.Z (nao commita nem cria tag)
+	@scripts/bump.sh $(or $(PART),patch)
