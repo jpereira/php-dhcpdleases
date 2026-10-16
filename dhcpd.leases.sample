@@ -1,52 +1,4104 @@
-# Sample of /var/lib/dhcpd/dhcpd.leases
-lease 186.243.29.187 {
-  starts 1 2014/11/03 17:33:12;
-  ends 1 2014/11/03 17:43:12;
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.1.1-P1
+
+lease 192.168.3.143 {
+  starts 1 2016/10/03 12:49:52;
+  ends 1 2016/10/03 18:49:52;
+  tstp 1 2016/10/03 18:49:52;
+  cltt 1 2016/10/03 12:49:52;
+  binding state free;
+  hardware ethernet a0:36:9f:17:93:fa;
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/16:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.144 {
+  starts 1 2016/10/03 13:44:00;
+  ends 1 2016/10/03 19:44:00;
+  tstp 1 2016/10/03 19:44:00;
+  cltt 1 2016/10/03 13:44:00;
+  binding state free;
+  hardware ethernet 04:62:73:8c:b5:b8;
+  uid "\001\004bs\214\265\270";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/48:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.147 {
+  starts 2 2016/10/04 05:22:16;
+  ends 2 2016/10/04 05:24:16;
+  cltt 2 2016/10/04 05:22:16;
+  binding state free;
+  hardware ethernet 48:dc:6b:06:2f:08;
+  uid "\001H\334k\006/\010";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/28:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.148 {
+  starts 2 2016/10/04 05:43:18;
+  ends 2 2016/10/04 05:45:18;
+  cltt 2 2016/10/04 05:43:18;
+  binding state free;
+  hardware ethernet 31:5d:8d:e9:d8:af;
+  uid "\0011]\215\351\330\257";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/33:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.149 {
+  starts 2 2016/10/04 05:43:19;
+  ends 2 2016/10/04 05:45:19;
+  cltt 2 2016/10/04 05:43:19;
+  binding state free;
+  hardware ethernet e4:3d:6a:9e:4f:3f;
+  uid "\001\344=j\236O?";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/42:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.150 {
+  starts 2 2016/10/04 05:43:25;
+  ends 2 2016/10/04 05:45:25;
+  cltt 2 2016/10/04 05:43:25;
+  binding state free;
+  hardware ethernet 2f:09:53:b2:01:ef;
+  uid "\001/\011S\262\001\357";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/38:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.151 {
+  starts 2 2016/10/04 05:43:47;
+  ends 2 2016/10/04 05:45:47;
+  cltt 2 2016/10/04 05:43:47;
+  binding state free;
+  hardware ethernet 1d:4b:1d:5e:18:55;
+  uid "\001\035K\035^\030U";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/11:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.153 {
+  starts 2 2016/10/04 05:43:50;
+  ends 2 2016/10/04 05:45:50;
+  cltt 2 2016/10/04 05:43:50;
+  binding state free;
+  hardware ethernet be:93:d4:c5:63:9d;
+  uid "\001\276\223\324\305c\235";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/14:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.154 {
+  starts 2 2016/10/04 05:43:52;
+  ends 2 2016/10/04 05:45:52;
+  cltt 2 2016/10/04 05:43:52;
+  binding state free;
+  hardware ethernet 08:57:f9:33:7f:76;
+  uid "\001\010W\3713\177v";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/6:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.155 {
+  starts 2 2016/10/04 05:43:54;
+  ends 2 2016/10/04 05:45:54;
+  cltt 2 2016/10/04 05:43:54;
+  binding state free;
+  hardware ethernet dd:ea:a0:4d:28:72;
+  uid "\001\335\352\240M(r";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/39:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.156 {
+  starts 2 2016/10/04 05:43:55;
+  ends 2 2016/10/04 05:45:55;
+  cltt 2 2016/10/04 05:43:55;
+  binding state free;
+  hardware ethernet 90:42:4a:56:3b:51;
+  uid "\001\220BJV;Q";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/35:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.157 {
+  starts 2 2016/10/04 05:43:57;
+  ends 2 2016/10/04 05:45:57;
+  cltt 2 2016/10/04 05:43:57;
+  binding state free;
+  hardware ethernet bc:63:e2:d2:ca:bb;
+  uid "\001\274c\342\322\312\273";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/19:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.139 {
+  starts 2 2016/10/04 05:44:00;
+  ends 2 2016/10/04 05:46:00;
+  cltt 2 2016/10/04 05:44:00;
+  binding state free;
+  hardware ethernet 8a:a6:94:50:c3:3c;
+  uid "\001\212\246\224P\303<";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/24:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.140 {
+  starts 2 2016/10/04 05:44:02;
+  ends 2 2016/10/04 05:46:02;
+  cltt 2 2016/10/04 05:44:02;
+  binding state free;
+  hardware ethernet c0:b4:ec:04:bb:80;
+  uid "\001\300\264\354\004\273\200";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/43:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.111 {
+  starts 2 2016/10/04 06:32:54;
+  ends 2 2016/10/04 06:34:54;
+  cltt 2 2016/10/04 06:32:54;
+  binding state free;
+  hardware ethernet e6:6b:ab:e6:85:ce;
+  uid "\001\346k\253\346\205\316";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.3.112 {
+  starts 2 2016/10/04 06:53:22;
+  ends 2 2016/10/04 06:55:22;
+  cltt 2 2016/10/04 06:53:22;
+  binding state free;
+  hardware ethernet bc:1b:9a:04:8c:c0;
+  uid "\001\274\033\232\004\214\300";
+}
+lease 192.168.3.198 {
+  starts 2 2016/10/04 01:54:30;
+  ends 2 2016/10/04 07:54:30;
+  tstp 2 2016/10/04 07:54:30;
+  cltt 2 2016/10/04 01:54:30;
+  binding state free;
+  hardware ethernet b0:fa:eb:36:25:49;
+  uid "\001\260\372\3536%I";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/24:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.113 {
+  starts 2 2016/10/04 07:07:10;
+  ends 2 2016/10/04 08:00:16;
+  tstp 2 2016/10/04 08:00:16;
+  cltt 2 2016/10/04 07:07:10;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:79:c4;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4S2|+|FCH1827V06M";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/43:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.161 {
+  starts 2 2016/10/04 03:51:18;
+  ends 2 2016/10/04 09:51:18;
+  tstp 2 2016/10/04 09:51:18;
+  cltt 2 2016/10/04 03:51:18;
+  binding state free;
+  hardware ethernet a0:36:9f:17:93:fa;
+  uid "\001\2406\237\027\223\372";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/39:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.177 {
+  starts 2 2016/10/04 03:55:07;
+  ends 2 2016/10/04 09:55:07;
+  tstp 2 2016/10/04 09:55:07;
+  cltt 2 2016/10/04 03:55:07;
+  binding state free;
+  hardware ethernet 00:c8:8b:42:da:42;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/11:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.170 {
+  starts 2 2016/10/04 04:54:46;
+  ends 2 2016/10/04 10:54:46;
+  tstp 2 2016/10/04 10:54:46;
+  cltt 2 2016/10/04 04:54:46;
+  binding state free;
+  hardware ethernet 00:25:b5:00:03:7f;
+  uid "\001\000%\265\000\003\177";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/41:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.221 {
+  starts 2 2016/10/04 05:05:39;
+  ends 2 2016/10/04 11:05:39;
+  tstp 2 2016/10/04 11:05:39;
+  cltt 2 2016/10/04 05:05:39;
+  binding state free;
+  hardware ethernet a8:9d:21:93:09:3d;
+  uid "\001\250\235!\223\011=";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/4:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.160 {
+  starts 2 2016/10/04 07:21:07;
+  ends 2 2016/10/04 11:33:23;
+  tstp 2 2016/10/04 11:33:23;
+  cltt 2 2016/10/04 07:21:07;
+  binding state free;
+  hardware ethernet 74:a0:2f:5f:70:25;
+  uid "\001t\240/_p%";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/26:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.181 {
+  starts 2 2016/10/04 07:35:22;
+  ends 2 2016/10/04 13:35:22;
+  tstp 2 2016/10/04 13:35:22;
+  cltt 2 2016/10/04 07:35:22;
+  binding state free;
+  hardware ethernet 00:c8:8b:42:da:42;
+  uid "\001\000\310\213B\332B";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.3.142 {
+  starts 2 2016/10/04 08:02:19;
+  ends 2 2016/10/04 14:02:19;
+  tstp 2 2016/10/04 14:02:19;
+  cltt 2 2016/10/04 08:02:19;
+  binding state free;
+  hardware ethernet d0:72:dc:5a:51:fe;
+  uid "\001\320r\334ZQ\376";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/42:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.110 {
+  starts 2 2016/10/04 09:28:28;
+  ends 2 2016/10/04 15:28:28;
+  tstp 2 2016/10/04 15:28:28;
+  cltt 2 2016/10/04 09:28:28;
+  binding state free;
+  hardware ethernet 00:25:b5:00:01:de;
+  uid "\001\000%\265\000\001\336";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.3.185 {
+  starts 2 2016/10/04 10:58:27;
+  ends 2 2016/10/04 16:58:27;
+  tstp 2 2016/10/04 16:58:27;
+  cltt 2 2016/10/04 10:58:27;
+  binding state free;
+  hardware ethernet 00:25:b5:00:00:af;
+  uid "\001\000%\265\000\000\257";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/9:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.145 {
+  starts 2 2016/10/04 11:24:00;
+  ends 2 2016/10/04 17:24:00;
+  tstp 2 2016/10/04 17:24:00;
+  cltt 2 2016/10/04 11:24:00;
+  binding state free;
+  hardware ethernet d0:72:dc:5a:51:fe;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/48:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.166 {
+  starts 2 2016/10/04 11:31:48;
+  ends 2 2016/10/04 17:31:48;
+  tstp 2 2016/10/04 17:31:48;
+  cltt 2 2016/10/04 11:31:48;
+  binding state free;
+  hardware ethernet 74:a2:e6:11:bb:e6;
+  uid "\000\031\370~\\\265\367I\275\240\362D\003(\263)\343";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/15:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.230 {
+  starts 2 2016/10/04 13:02:24;
+  ends 2 2016/10/04 19:02:24;
+  tstp 2 2016/10/04 19:02:24;
+  cltt 2 2016/10/04 13:02:24;
+  binding state free;
+  hardware ethernet 00:25:b5:00:00:4e;
+  uid "\001\000%\265\000\000N";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/32:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.124 {
+  starts 2 2016/10/04 14:14:53;
+  ends 2 2016/10/04 20:14:53;
+  tstp 2 2016/10/04 20:14:53;
+  cltt 2 2016/10/04 14:14:53;
+  binding state free;
+  hardware ethernet 80:e0:1d:36:fe:0e;
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.3.115 {
+  starts 3 2016/10/05 02:59:57;
+  ends 3 2016/10/05 03:04:05;
+  tstp 3 2016/10/05 03:04:05;
+  cltt 3 2016/10/05 02:59:57;
+  binding state free;
+  hardware ethernet a4:6c:2a:ec:3d:5d;
+  uid "\001\244l*\354=]";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/28:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.116 {
+  starts 3 2016/10/05 06:18:44;
+  ends 3 2016/10/05 06:43:29;
+  tstp 3 2016/10/05 06:43:29;
+  cltt 3 2016/10/05 06:18:44;
+  binding state free;
+  hardware ethernet 64:f6:9d:36:ae:04;
+  uid "\001d\366\2356\256\004";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/30:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.122 {
+  starts 3 2016/10/05 02:19:59;
+  ends 3 2016/10/05 08:19:59;
+  tstp 3 2016/10/05 08:19:59;
+  cltt 3 2016/10/05 02:19:59;
+  binding state free;
+  hardware ethernet 80:e0:1d:36:fe:0e;
+  uid "\001\200\340\0356\376\016";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.3.118 {
+  starts 3 2016/10/05 03:31:20;
+  ends 3 2016/10/05 09:31:20;
+  tstp 3 2016/10/05 09:31:20;
+  cltt 3 2016/10/05 03:31:20;
+  binding state free;
+  hardware ethernet 18:8b:9d:a3:1d:ec;
+  uid "\001\030\213\235\243\035\354";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/35:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.138 {
+  starts 3 2016/10/05 04:21:05;
+  ends 3 2016/10/05 10:21:05;
+  tstp 3 2016/10/05 10:21:05;
+  cltt 3 2016/10/05 04:21:05;
+  binding state free;
+  hardware ethernet 00:25:b5:00:01:df;
+  uid "\001\000%\265\000\001\337";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/22:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.109 {
+  starts 3 2016/10/05 08:02:37;
+  ends 3 2016/10/05 14:02:37;
+  tstp 3 2016/10/05 14:02:37;
+  cltt 3 2016/10/05 08:02:37;
+  binding state free;
+  hardware ethernet 00:25:b5:00:00:5f;
+  uid "\001\000%\265\000\000_";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/30:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.129 {
+  starts 3 2016/10/05 10:50:40;
+  ends 3 2016/10/05 16:50:40;
+  tstp 3 2016/10/05 16:50:40;
+  cltt 3 2016/10/05 10:50:40;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:4d;
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/47:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.135 {
+  starts 4 2016/10/06 10:14:48;
+  ends 4 2016/10/06 10:39:26;
+  tstp 4 2016/10/06 10:39:26;
+  cltt 4 2016/10/06 10:14:48;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:0d:20;
+  uid "\000Bu\010\310\257&H\321\255a\304\326l\201\220z";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/33:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.189 {
+  starts 4 2016/10/06 05:29:16;
+  ends 4 2016/10/06 11:29:16;
+  tstp 4 2016/10/06 11:29:16;
+  cltt 4 2016/10/06 05:29:16;
+  binding state free;
+  hardware ethernet a4:4c:11:a1:29:89;
+}
+lease 192.168.3.146 {
+  starts 4 2016/10/06 07:36:08;
+  ends 4 2016/10/06 13:36:08;
+  tstp 4 2016/10/06 13:36:08;
+  cltt 4 2016/10/06 07:36:08;
+  binding state free;
+  hardware ethernet 80:e0:1d:d7:18:66;
+  uid "\001\200\340\035\327\030f";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/13:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.128 {
+  starts 4 2016/10/06 07:36:08;
+  ends 4 2016/10/06 13:36:08;
+  tstp 4 2016/10/06 13:36:08;
+  cltt 4 2016/10/06 07:36:08;
+  binding state free;
+  hardware ethernet 84:b2:61:c2:f3:28;
+  uid "\001\204\262a\302\363(";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/34:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.136 {
+  starts 4 2016/10/06 10:38:58;
+  ends 4 2016/10/06 16:38:58;
+  tstp 4 2016/10/06 16:38:58;
+  cltt 4 2016/10/06 10:38:58;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:0d:20;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/32:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.132 {
+  starts 4 2016/10/06 11:31:42;
+  ends 4 2016/10/06 17:31:42;
+  tstp 4 2016/10/06 17:31:42;
+  cltt 4 2016/10/06 11:31:42;
+  binding state free;
+  hardware ethernet 00:fe:c8:e4:d9:9d;
+  uid "\001\000\376\310\344\331\235";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.3.131 {
+  starts 4 2016/10/06 15:57:25;
+  ends 4 2016/10/06 21:57:25;
+  tstp 4 2016/10/06 21:57:25;
+  cltt 4 2016/10/06 15:57:25;
+  binding state free;
+  hardware ethernet cc:46:d6:f8:60:2a;
+  uid "\001\314F\326\370`*";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/4:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.133 {
+  starts 5 2016/10/07 02:27:00;
+  ends 5 2016/10/07 08:27:00;
+  tstp 5 2016/10/07 08:27:00;
+  cltt 5 2016/10/07 02:27:00;
+  binding state free;
+  hardware ethernet cc:46:d6:f8:60:2a;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.3.227 {
+  starts 5 2016/10/07 02:42:57;
+  ends 5 2016/10/07 08:42:57;
+  tstp 5 2016/10/07 08:42:57;
+  cltt 5 2016/10/07 02:42:57;
+  binding state free;
+  hardware ethernet cc:46:d6:f8:60:2b;
+  uid "\000\365\233O\224v|Lo\210\026\371C\206\037\361\352";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/35:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.171 {
+  starts 5 2016/10/07 04:39:54;
+  ends 5 2016/10/07 10:39:54;
+  tstp 5 2016/10/07 10:39:54;
+  cltt 5 2016/10/07 04:39:54;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/31:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.232 {
+  starts 5 2016/10/07 11:18:46;
+  ends 5 2016/10/07 11:22:12;
+  tstp 5 2016/10/07 11:22:12;
+  cltt 5 2016/10/07 11:18:46;
+  binding state free;
+  hardware ethernet 50:7b:9d:91:58:97;
+  uid "\001P{\235\221X\227";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/34:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.137 {
+  starts 5 2016/10/07 06:00:30;
+  ends 5 2016/10/07 12:00:30;
+  tstp 5 2016/10/07 12:00:30;
+  cltt 5 2016/10/07 06:00:30;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:0d:20;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/14:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.224 {
+  starts 5 2016/10/07 12:09:18;
+  ends 5 2016/10/07 18:09:18;
+  tstp 5 2016/10/07 18:09:18;
+  cltt 5 2016/10/07 12:09:18;
+  binding state free;
+  hardware ethernet 00:0a:f7:1d:df:e1;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/45:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.222 {
+  starts 5 2016/10/07 12:10:20;
+  ends 5 2016/10/07 18:10:20;
+  tstp 5 2016/10/07 18:10:20;
+  cltt 5 2016/10/07 12:10:20;
+  binding state free;
+  hardware ethernet 00:0a:f7:1d:df:e0;
+  uid "\001\000\012\367\035\337\340";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/43:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.200 {
+  starts 6 2016/10/08 16:19:39;
+  ends 6 2016/10/08 22:19:39;
+  tstp 6 2016/10/08 22:19:39;
+  cltt 6 2016/10/08 16:19:39;
+  binding state free;
+  hardware ethernet a4:6c:2a:38:f9:5e;
+  uid "\001\244l*8\371^";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.3.114 {
+  starts 6 2016/10/08 16:41:49;
+  ends 6 2016/10/08 22:41:49;
+  tstp 6 2016/10/08 22:41:49;
+  cltt 6 2016/10/08 16:41:49;
+  binding state free;
+  hardware ethernet a8:9d:21:93:09:3c;
+  uid "\001\250\235!\223\011<";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/22:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.169 {
+  starts 6 2016/10/08 16:41:57;
+  ends 6 2016/10/08 22:41:57;
+  tstp 6 2016/10/08 22:41:57;
+  cltt 6 2016/10/08 16:41:57;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  uid "\001P=\345\236\023\322";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/38:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.134 {
+  starts 6 2016/10/08 18:09:47;
+  ends 0 2016/10/09 00:09:47;
+  tstp 0 2016/10/09 00:09:47;
+  cltt 6 2016/10/08 18:09:47;
+  binding state free;
+  hardware ethernet a8:0c:0d:90:fc:ca;
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/4:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.178 {
+  starts 6 2016/10/08 18:18:57;
+  ends 0 2016/10/09 00:18:57;
+  tstp 0 2016/10/09 00:18:57;
+  cltt 6 2016/10/08 18:18:57;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:7b;
+  uid "\001\000%\264\000\000{";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.3.141 {
+  starts 2 2016/10/11 09:00:43;
+  ends 2 2016/10/11 15:00:43;
+  tstp 2 2016/10/11 15:00:43;
+  cltt 2 2016/10/11 09:00:43;
+  binding state free;
+  hardware ethernet 00:fe:c8:e4:d9:9d;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/16:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.130 {
+  starts 2 2016/10/11 09:51:57;
+  ends 2 2016/10/11 15:51:57;
+  tstp 2 2016/10/11 15:51:57;
+  cltt 2 2016/10/11 09:51:57;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:18;
+  uid "\001\000%\264\000\000\030";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/35:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.219 {
+  starts 3 2016/10/12 06:26:16;
+  ends 3 2016/10/12 09:50:08;
+  tstp 3 2016/10/12 09:50:08;
+  cltt 3 2016/10/12 06:26:16;
+  binding state free;
+  hardware ethernet f8:c2:88:d9:8c:fa;
+  uid "\001\370\302\210\331\214\372";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/16:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.203 {
+  starts 3 2016/10/12 06:42:32;
+  ends 3 2016/10/12 09:52:16;
+  tstp 3 2016/10/12 09:52:16;
+  cltt 3 2016/10/12 06:42:32;
+  binding state free;
+  hardware ethernet 04:62:73:c5:4b:ba;
+  uid "\001\004bs\305K\272";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/7:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.184 {
+  starts 3 2016/10/12 08:26:18;
+  ends 3 2016/10/12 14:26:18;
+  tstp 3 2016/10/12 14:26:18;
+  cltt 3 2016/10/12 08:26:18;
+  binding state free;
+  hardware ethernet 5c:83:8f:80:a9:d4;
+  uid "\001\\\203\217\200\251\324";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/30:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.204 {
+  starts 4 2016/10/13 03:40:17;
+  ends 4 2016/10/13 03:42:17;
+  cltt 4 2016/10/13 03:40:17;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/42:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.216 {
+  starts 4 2016/10/13 03:40:17;
+  ends 4 2016/10/13 03:42:17;
+  cltt 4 2016/10/13 03:40:17;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/26:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.168 {
+  starts 4 2016/10/13 03:36:45;
+  ends 4 2016/10/13 09:36:45;
+  tstp 4 2016/10/13 09:36:45;
+  cltt 4 2016/10/13 03:36:45;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  uid "\000[\2109\244\204\302M\360\251w%\234\306\220\260\035";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/7:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.218 {
+  starts 4 2016/10/13 05:24:38;
+  ends 4 2016/10/13 11:24:38;
+  tstp 4 2016/10/13 11:24:38;
+  cltt 4 2016/10/13 05:24:38;
+  binding state free;
+  hardware ethernet a0:36:9f:17:93:fa;
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/9:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.208 {
+  starts 4 2016/10/13 08:25:22;
+  ends 4 2016/10/13 14:25:22;
+  tstp 4 2016/10/13 14:25:22;
+  cltt 4 2016/10/13 08:25:22;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/16:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.228 {
+  starts 4 2016/10/13 09:33:12;
+  ends 4 2016/10/13 15:33:12;
+  tstp 4 2016/10/13 15:33:12;
+  cltt 4 2016/10/13 09:33:12;
+  binding state free;
+  hardware ethernet cc:46:d6:f8:60:2b;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/36:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.213 {
+  starts 4 2016/10/13 15:06:55;
+  ends 4 2016/10/13 21:06:55;
+  tstp 4 2016/10/13 21:06:55;
+  cltt 4 2016/10/13 15:06:55;
+  binding state free;
+  hardware ethernet a4:6c:2a:38:f9:5d;
+  uid "\001\244l*8\371]";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.3.226 {
+  starts 5 2016/10/14 01:04:38;
+  ends 5 2016/10/14 07:04:38;
+  tstp 5 2016/10/14 07:04:38;
+  cltt 5 2016/10/14 01:04:38;
+  binding state free;
+  hardware ethernet cc:46:d6:f8:60:2b;
+  uid "\001\314F\326\370`+";
+}
+lease 192.168.3.233 {
+  starts 5 2016/10/14 04:04:37;
+  ends 5 2016/10/14 10:04:37;
+  tstp 5 2016/10/14 10:04:37;
+  cltt 5 2016/10/14 04:04:37;
+  binding state free;
+  hardware ethernet d0:72:dc:5a:52:04;
+  uid "\001\320r\334ZR\004";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/11:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.215 {
+  starts 5 2016/10/14 08:19:03;
+  ends 5 2016/10/14 14:19:03;
+  tstp 5 2016/10/14 14:19:03;
+  cltt 5 2016/10/14 08:19:03;
+  binding state free;
+  hardware ethernet 4c:4e:35:09:6a:ca;
+  uid "\001LN5\011j\312";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/26:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.196 {
+  starts 1 2016/10/17 04:31:39;
+  ends 1 2016/10/17 04:33:39;
+  cltt 1 2016/10/17 04:31:39;
+  binding state free;
+  hardware ethernet e2:5d:65:f3:57:a2;
+  uid "\001\342]e\363W\242";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/1:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.120 {
+  starts 1 2016/10/17 02:47:02;
+  ends 1 2016/10/17 08:47:02;
+  tstp 1 2016/10/17 08:47:02;
+  cltt 1 2016/10/17 02:47:02;
+  binding state free;
+  hardware ethernet 74:a2:e6:11:bb:e6;
+  uid "\001t\242\346\021\273\346";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/30:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.214 {
+  starts 1 2016/10/17 03:38:41;
+  ends 1 2016/10/17 09:38:41;
+  tstp 1 2016/10/17 09:38:41;
+  cltt 1 2016/10/17 03:38:41;
+  binding state free;
+  hardware ethernet 7c:69:f6:4c:4e:f1;
+  uid "\001|i\366LN\361";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.3.236 {
+  starts 1 2016/10/17 10:33:10;
+  ends 1 2016/10/17 16:33:10;
+  tstp 1 2016/10/17 16:33:10;
+  cltt 1 2016/10/17 10:33:10;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:79:cb;
+  uid "\001\364\017\033\036y\313";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/46:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.182 {
+  starts 1 2016/10/17 10:39:42;
+  ends 1 2016/10/17 16:39:42;
+  tstp 1 2016/10/17 16:39:42;
+  cltt 1 2016/10/17 10:39:42;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:ac:04;
+  uid "\000\203\324\313\226x%FA\212\016v\374\"\240\336\354";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/14:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.229 {
+  starts 1 2016/10/17 11:33:19;
+  ends 1 2016/10/17 17:33:19;
+  tstp 1 2016/10/17 17:33:19;
+  cltt 1 2016/10/17 11:33:19;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:79:cb;
+  uid "\000\333\032.p}\036J.\230}j\200J\235\366\315";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/35:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.176 {
+  starts 2 2016/10/18 06:43:57;
+  ends 2 2016/10/18 08:48:55;
+  tstp 2 2016/10/18 08:48:55;
+  cltt 2 2016/10/18 06:43:57;
+  binding state free;
+  hardware ethernet a4:93:4c:aa:69:fc;
+  uid "Cisco Systems Inc|+|UCSC-C220-M3S|+|FCH1623V18H";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/38:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.191 {
+  starts 2 2016/10/18 04:50:48;
+  ends 2 2016/10/18 10:50:48;
+  tstp 2 2016/10/18 10:50:48;
+  cltt 2 2016/10/18 04:50:48;
+  binding state free;
+  hardware ethernet a0:36:9f:1c:b1:ac;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/33:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.173 {
+  starts 2 2016/10/18 04:55:19;
+  ends 2 2016/10/18 10:55:19;
+  tstp 2 2016/10/18 10:55:19;
+  cltt 2 2016/10/18 04:55:19;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:ac:05;
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/39:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.212 {
+  starts 2 2016/10/18 05:03:26;
+  ends 2 2016/10/18 11:03:26;
+  tstp 2 2016/10/18 11:03:26;
+  cltt 2 2016/10/18 05:03:26;
+  binding state free;
+  hardware ethernet 88:1d:fc:53:29:45;
+  uid "\001\210\035\374S)E";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/37:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.105 {
+  starts 2 2016/10/18 05:08:54;
+  ends 2 2016/10/18 11:08:54;
+  tstp 2 2016/10/18 11:08:54;
+  cltt 2 2016/10/18 05:08:54;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:1b:3c;
+  uid "\001<\375\376\237\033<";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/6:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.223 {
+  starts 2 2016/10/18 05:10:35;
+  ends 2 2016/10/18 11:10:35;
+  tstp 2 2016/10/18 11:10:35;
+  cltt 2 2016/10/18 05:10:35;
+  binding state free;
+  hardware ethernet 04:62:73:8c:86:7b;
+  uid "\001\004bs\214\206{";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/21:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.163 {
+  starts 2 2016/10/18 11:59:25;
+  ends 2 2016/10/18 12:01:25;
+  cltt 2 2016/10/18 11:59:25;
+  binding state free;
+  hardware ethernet 53:f4:bf:82:9f:95;
+  uid "\001S\364\277\202\237\225";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/46:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.180 {
+  starts 2 2016/10/18 11:59:25;
+  ends 2 2016/10/18 12:01:25;
+  cltt 2 2016/10/18 11:59:25;
+  binding state free;
+  hardware ethernet c8:84:ea:f2:52:56;
+  uid "\001\310\204\352\362RV";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/43:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.108 {
+  starts 2 2016/10/18 06:10:20;
+  ends 2 2016/10/18 12:10:20;
+  tstp 2 2016/10/18 12:10:20;
+  cltt 2 2016/10/18 06:10:20;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:1c:01;
+  uid "\001<\375\376\237\034\001";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/5:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.190 {
+  starts 2 2016/10/18 12:36:23;
+  ends 2 2016/10/18 12:38:23;
+  cltt 2 2016/10/18 12:36:23;
+  binding state free;
+  hardware ethernet be:da:1c:34:ca:5c;
+  uid "\001\276\332\0344\312\\";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.3.192 {
+  starts 2 2016/10/18 06:40:20;
+  ends 2 2016/10/18 12:40:20;
+  tstp 2 2016/10/18 12:40:20;
+  cltt 2 2016/10/18 06:40:20;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:1b:3d;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/14:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.235 {
+  starts 2 2016/10/18 12:36:34;
+  ends 2 2016/10/18 12:55:27;
+  tstp 2 2016/10/18 12:55:27;
+  cltt 2 2016/10/18 12:36:34;
+  binding state free;
+  hardware ethernet a8:0c:0d:90:fc:ca;
+  uid "\001\250\014\015\220\374\312";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.3.239 {
+  starts 2 2016/10/18 07:31:26;
+  ends 2 2016/10/18 13:31:26;
+  tstp 2 2016/10/18 13:31:26;
+  cltt 2 2016/10/18 07:31:26;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:05;
+  uid "\001\000%\264\000\000\005";
+}
+lease 192.168.3.240 {
+  starts 2 2016/10/18 08:13:16;
+  ends 2 2016/10/18 14:13:16;
+  tstp 2 2016/10/18 14:13:16;
+  cltt 2 2016/10/18 08:13:16;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:1a;
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/35:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.117 {
+  starts 2 2016/10/18 08:37:42;
+  ends 2 2016/10/18 14:37:42;
+  tstp 2 2016/10/18 14:37:42;
+  cltt 2 2016/10/18 08:37:42;
+  binding state free;
+  hardware ethernet 64:f6:9d:36:ae:04;
+  uid "\000B\337\233\362\304DCR\257\212l\033\3763\226!";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.3.201 {
+  starts 2 2016/10/18 11:25:57;
+  ends 2 2016/10/18 17:25:57;
+  tstp 2 2016/10/18 17:25:57;
+  cltt 2 2016/10/18 11:25:57;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:1b:3c;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/43:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.125 {
+  starts 3 2016/10/19 02:50:08;
+  ends 3 2016/10/19 08:50:08;
+  tstp 3 2016/10/19 08:50:08;
+  cltt 3 2016/10/19 02:50:08;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:4d;
+  uid "\001\000%\264\000\000M";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/43:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.162 {
+  starts 3 2016/10/19 03:33:50;
+  ends 3 2016/10/19 09:33:50;
+  tstp 3 2016/10/19 09:33:50;
+  cltt 3 2016/10/19 03:33:50;
+  binding state free;
+  hardware ethernet 90:e2:ba:3e:96:e5;
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/7:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.159 {
+  starts 3 2016/10/19 05:11:39;
+  ends 3 2016/10/19 11:11:39;
+  tstp 3 2016/10/19 11:11:39;
+  cltt 3 2016/10/19 05:11:39;
+  binding state free;
+  hardware ethernet 54:a2:74:7e:11:0c;
+  uid "\001T\242t~\021\014";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/39:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.188 {
+  starts 3 2016/10/19 06:15:25;
+  ends 3 2016/10/19 12:15:25;
+  tstp 3 2016/10/19 12:15:25;
+  cltt 3 2016/10/19 06:15:25;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:79:cb;
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/44:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.225 {
+  starts 3 2016/10/19 06:31:34;
+  ends 3 2016/10/19 12:31:34;
+  tstp 3 2016/10/19 12:31:34;
+  cltt 3 2016/10/19 06:31:34;
+  binding state free;
+  hardware ethernet 00:90:fa:ae:b0:ae;
+  uid "\001\000\220\372\256\260\256";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/17:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.103 {
+  starts 3 2016/10/19 06:31:34;
+  ends 3 2016/10/19 12:31:34;
+  tstp 3 2016/10/19 12:31:34;
+  cltt 3 2016/10/19 06:31:34;
+  binding state free;
+  hardware ethernet 00:90:fa:ae:b0:b0;
+  uid "\001\000\220\372\256\260\260";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/6:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.164 {
+  starts 3 2016/10/19 06:31:34;
+  ends 3 2016/10/19 12:31:34;
+  tstp 3 2016/10/19 12:31:34;
+  cltt 3 2016/10/19 06:31:34;
+  binding state free;
+  hardware ethernet 00:90:fa:ae:b0:b1;
+  uid "\001\000\220\372\256\260\261";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/22:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.206 {
+  starts 3 2016/10/19 10:29:29;
+  ends 3 2016/10/19 16:29:29;
+  tstp 3 2016/10/19 16:29:29;
+  cltt 3 2016/10/19 10:29:29;
+  binding state free;
+  hardware ethernet a8:0c:0d:90:fc:cb;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.3.231 {
+  starts 4 2016/10/20 09:59:17;
+  ends 4 2016/10/20 10:13:47;
+  tstp 4 2016/10/20 10:13:47;
+  cltt 4 2016/10/20 09:59:17;
+  binding state free;
+  hardware ethernet a8:0c:0d:90:fc:cb;
+  uid "\000n\376J\362|\345F\010\257\335\300\224\260\276\333\275";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/28:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.119 {
+  starts 4 2016/10/20 08:13:57;
+  ends 4 2016/10/20 14:13:57;
+  tstp 4 2016/10/20 14:13:57;
+  cltt 4 2016/10/20 08:13:57;
+  binding state free;
+  hardware ethernet 78:da:6e:a0:b3:d6;
+  uid "\001x\332n\240\263\326";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/45:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.101 {
+  starts 5 2016/10/21 03:27:52;
+  ends 5 2016/10/21 09:27:52;
+  tstp 5 2016/10/21 09:27:52;
+  cltt 5 2016/10/21 03:27:52;
+  binding state free;
+  hardware ethernet a8:0c:0d:90:fc:cb;
+  uid "\001\250\014\015\220\374\313";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/24:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.220 {
+  starts 5 2016/10/21 03:42:57;
+  ends 5 2016/10/21 09:42:57;
+  tstp 5 2016/10/21 09:42:57;
+  cltt 5 2016/10/21 03:42:57;
+  binding state free;
+  hardware ethernet fc:5b:39:5b:42:12;
+  uid "\001\374[9[B\022";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/3:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.126 {
+  starts 0 2016/10/23 01:39:59;
+  ends 0 2016/10/23 07:39:59;
+  tstp 0 2016/10/23 07:39:59;
+  cltt 0 2016/10/23 01:39:59;
+  binding state free;
+  hardware ethernet a4:4c:11:a1:29:89;
+  uid "\001\244L\021\241)\211";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.3.207 {
+  starts 0 2016/10/23 06:04:34;
+  ends 0 2016/10/23 12:04:34;
+  tstp 0 2016/10/23 12:04:34;
+  cltt 0 2016/10/23 06:04:34;
+  binding state free;
+  hardware ethernet a4:4c:11:a1:29:89;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.3.186 {
+  starts 1 2016/10/24 06:16:20;
+  ends 1 2016/10/24 12:16:20;
+  tstp 1 2016/10/24 12:16:20;
+  cltt 1 2016/10/24 06:16:20;
+  binding state free;
+  hardware ethernet 68:f7:28:31:56:3f;
+  uid "\001h\367(1V?";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/16:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.195 {
+  starts 1 2016/10/24 11:20:57;
+  ends 1 2016/10/24 17:20:57;
+  tstp 1 2016/10/24 17:20:57;
+  cltt 1 2016/10/24 11:20:57;
+  binding state free;
+  hardware ethernet 4c:4e:35:09:6a:ca;
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/27:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.210 {
+  starts 1 2016/10/24 14:23:50;
+  ends 1 2016/10/24 20:23:50;
+  tstp 1 2016/10/24 20:23:50;
+  cltt 1 2016/10/24 14:23:50;
+  binding state free;
+  hardware ethernet 7c:69:f6:4c:4e:f0;
+  uid "\001|i\366LN\360";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/16:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.175 {
+  starts 2 2016/10/25 04:59:40;
+  ends 2 2016/10/25 05:00:38;
+  tstp 2 2016/10/25 05:00:38;
+  cltt 2 2016/10/25 04:59:40;
+  binding state free;
+  hardware ethernet 74:a2:e6:28:c6:03;
+  uid "\001t\242\346(\306\003";
+}
+lease 192.168.3.179 {
+  starts 2 2016/10/25 04:15:54;
+  ends 2 2016/10/25 10:15:54;
+  cltt 2 2016/10/25 04:15:54;
   binding state active;
   next binding state free;
-  hardware ethernet 9c:65:b0:c4:d7:11;
-  uid "\001\234e\260\304\327\024";
-  option agent.circuit-id "WLAN:wlan3:SSIDABC:";
-  client-hostname "android-ee1fe3641876c410";
+  hardware ethernet a4:6c:2a:38:f9:5d;
 }
-lease 200.123.49.17 {
-  starts 1 2014/11/03 17:33:12;
-  ends 1 2014/11/03 17:43:12;
+lease 192.168.3.107 {
+  starts 2 2016/10/25 05:08:55;
+  ends 2 2016/10/25 11:08:55;
+  cltt 2 2016/10/25 05:08:55;
   binding state active;
   next binding state free;
-  hardware ethernet ac:65:c0:c4:d7:18;
-  uid "\001\234e\260\304\327\024";
-  option agent.circuit-id "WLAN:wlan3:123";
-  option agent.remote-id "C4:10:8A:18:19:10";
-  client-hostname "ios-ee1fe3641876c410";
+  hardware ethernet 00:26:cb:85:63:42;
+  uid "\000cisco-0026.cb85.6342-Vl3";
+  set vendor-class-identifier = "Cisco Systems, Inc. Catalyst";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/22:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+  client-hostname "MT-3750-24-A8";
 }
-lease 12.13.29.7 {
-  starts 1 2014/11/03 17:33:12;
-  ends 1 2014/11/03 17:43:12;
+lease 192.168.3.209 {
+  starts 2 2016/10/25 05:09:45;
+  ends 2 2016/10/25 11:09:45;
+  cltt 2 2016/10/25 05:09:45;
   binding state active;
   next binding state free;
-  hardware ethernet 9c:65:b0:c4:d7:aa;
-  uid "\001\234e\260\304\327\024";
-  option agent.circuit-id "WLAN:wlan3:444::zf7363:OPERACOES:C4:10:8A:18:19:10";
-  client-hostname "android-ee1fe3641876c410";
+  hardware ethernet 00:10:18:cf:0a:7a;
+  uid "\001\000\020\030\317\012z";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/48:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+  client-hostname "linux-hggz";
 }
-lease 136.53.29.7 {
-  starts 1 2014/11/03 17:33:12;
-  ends 1 2014/11/03 17:43:12;
+lease 192.168.3.199 {
+  starts 2 2016/10/25 05:31:47;
+  ends 2 2016/10/25 11:31:47;
+  cltt 2 2016/10/25 05:31:47;
   binding state active;
   next binding state free;
-  hardware ethernet 9c:65:b0:c4:17:11;
-  uid "\001\234e\260\304\327\024";
-  option agent.circuit-id "Wsample de circuitid";
-  client-hostname "samsung-tv-122344";
+  hardware ethernet 00:c8:8b:42:da:40;
+  option agent.circuit-id "SW-ACC-02:Gi1/0/45:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
 }
-lease 136.53.29.7 {
-  starts 1 2014/11/03 17:33:12;
-  ends 1 2014/11/03 17:43:12;
+lease 192.168.3.167 {
+  starts 2 2016/10/25 05:34:32;
+  ends 2 2016/10/25 11:34:32;
+  cltt 2 2016/10/25 05:34:32;
   binding state active;
   next binding state free;
-  hardware ethernet 9c:65:b0:c4:17:11;
-  uid "\001\234e\260\304\327\024";
-  option agent.circuit-id "Wsample de circuitid";
-  client-hostname "samsung-tv-122344";
+  hardware ethernet 00:c8:8b:42:da:40;
+  uid "\001\000\310\213B\332@";
+  set vendor-class-identifier = "MSFT 5.0";
 }
+lease 192.168.3.172 {
+  starts 2 2016/10/25 05:45:25;
+  ends 2 2016/10/25 11:45:25;
+  cltt 2 2016/10/25 05:45:25;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:42:68:47:02:18;
+  uid "\000\2501\340\355T\313M\375\226q\256$\253\3053d";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/15:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.127 {
+  starts 2 2016/10/25 06:21:00;
+  ends 2 2016/10/25 12:21:00;
+  cltt 2 2016/10/25 06:21:00;
+  binding state active;
+  next binding state free;
+  hardware ethernet f8:c2:88:67:98:12;
+  uid "\001\370\302\210g\230\022";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/22:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+}
+lease 192.168.3.106 {
+  starts 2 2016/10/25 06:24:22;
+  ends 2 2016/10/25 12:24:22;
+  cltt 2 2016/10/25 06:24:22;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:25:b4:60:29:c2;
+  uid "\000cisco-0025.b460.29c2-Vl3";
+  set vendor-class-identifier = "Cisco Systems, Inc. Catalyst";
+  option agent.circuit-id "SW-ACC-02:Gi1/0/18:vlan3";
+  option agent.remote-id 00:25:45:d1:3e:00;
+  client-hostname "MT-3750-48-B3";
+}
+lease 192.168.2.211 {
+  starts 5 2016/10/07 08:49:58;
+  ends 5 2016/10/07 14:49:58;
+  tstp 5 2016/10/07 14:49:58;
+  cltt 5 2016/10/07 08:49:58;
+  binding state free;
+  hardware ethernet 4c:4e:35:eb:24:d6;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.197 {
+  starts 5 2016/10/07 12:13:10;
+  ends 5 2016/10/07 18:13:10;
+  tstp 5 2016/10/07 18:13:10;
+  cltt 5 2016/10/07 12:13:10;
+  binding state free;
+  hardware ethernet 50:7b:9d:91:58:97;
+  uid "\001P{\235\221X\227";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.160 {
+  starts 5 2016/10/07 13:27:27;
+  ends 5 2016/10/07 19:27:27;
+  tstp 5 2016/10/07 19:27:27;
+  cltt 5 2016/10/07 13:27:27;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:20:b6;
+  uid "\000P\206g\206\322YE\333\270Hq\007\203\361f\036";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.150 {
+  starts 5 2016/10/07 13:28:47;
+  ends 5 2016/10/07 19:28:47;
+  tstp 5 2016/10/07 19:28:47;
+  cltt 5 2016/10/07 13:28:47;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:20:b6;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.146 {
+  starts 6 2016/10/08 16:41:57;
+  ends 6 2016/10/08 22:41:57;
+  tstp 6 2016/10/08 22:41:57;
+  cltt 6 2016/10/08 16:41:57;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d3;
+  uid "\001P=\345\236\023\323";
+}
+lease 192.168.2.232 {
+  starts 6 2016/10/08 17:19:13;
+  ends 6 2016/10/08 23:19:13;
+  tstp 6 2016/10/08 23:19:13;
+  cltt 6 2016/10/08 17:19:13;
+  binding state free;
+  hardware ethernet 00:25:b5:00:02:6f;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.148 {
+  starts 6 2016/10/08 17:34:08;
+  ends 6 2016/10/08 23:34:08;
+  tstp 6 2016/10/08 23:34:08;
+  cltt 6 2016/10/08 17:34:08;
+  binding state free;
+  hardware ethernet 00:25:b5:00:03:0f;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.242 {
+  starts 6 2016/10/08 18:18:54;
+  ends 0 2016/10/09 00:18:54;
+  tstp 0 2016/10/09 00:18:54;
+  cltt 6 2016/10/08 18:18:54;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:5e;
+  uid "\001\000%\264\000\000^";
+}
+lease 192.168.2.196 {
+  starts 6 2016/10/08 18:52:14;
+  ends 0 2016/10/09 00:52:14;
+  tstp 0 2016/10/09 00:52:14;
+  cltt 6 2016/10/08 18:52:14;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:09;
+  uid "\000G \216>?\037OU\214\236T7\352\260V\203";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.236 {
+  starts 2 2016/10/11 08:23:01;
+  ends 2 2016/10/11 14:23:01;
+  tstp 2 2016/10/11 14:23:01;
+  cltt 2 2016/10/11 08:23:01;
+  binding state free;
+  hardware ethernet a4:4c:11:a1:29:89;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.218 {
+  starts 2 2016/10/11 09:56:58;
+  ends 2 2016/10/11 15:56:58;
+  tstp 2 2016/10/11 15:56:58;
+  cltt 2 2016/10/11 09:56:58;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:09;
+  uid "\001\000%\264\000\000\011";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.143 {
+  starts 2 2016/10/11 10:16:56;
+  ends 2 2016/10/11 16:16:56;
+  tstp 2 2016/10/11 16:16:56;
+  cltt 2 2016/10/11 10:16:56;
+  binding state free;
+  hardware ethernet f8:c2:88:67:e4:64;
+  uid "\000`c\011\014\005TF{\240\232\0226}?#7";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.237 {
+  starts 2 2016/10/11 10:43:06;
+  ends 2 2016/10/11 16:43:06;
+  tstp 2 2016/10/11 16:43:06;
+  cltt 2 2016/10/11 10:43:06;
+  binding state free;
+  hardware ethernet 74:a0:2f:a4:dc:dc;
+  uid "\001t\240/\244\334\334";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.200 {
+  starts 3 2016/10/12 05:11:12;
+  ends 3 2016/10/12 11:11:12;
+  tstp 3 2016/10/12 11:11:12;
+  cltt 3 2016/10/12 05:11:12;
+  binding state free;
+  hardware ethernet c0:8c:60:15:71:66;
+  uid "\000\204\002\225qJy@Y\271\267\031\215\252\337n\251";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.238 {
+  starts 3 2016/10/12 05:11:24;
+  ends 3 2016/10/12 11:11:24;
+  tstp 3 2016/10/12 11:11:24;
+  cltt 3 2016/10/12 05:11:24;
+  binding state free;
+  hardware ethernet 30:f7:0d:6d:50:a1;
+  uid "\000:\242\357:\332fM\346\237\013c\231O\0367R";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.233 {
+  starts 3 2016/10/12 05:12:33;
+  ends 3 2016/10/12 11:12:33;
+  tstp 3 2016/10/12 11:12:33;
+  cltt 3 2016/10/12 05:12:33;
+  binding state free;
+  hardware ethernet a4:4c:11:a0:ef:7c;
+  uid "\000\301>\276\020C\266D\034\247\240\013\011\336\355\317\016";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.213 {
+  starts 3 2016/10/12 05:36:11;
+  ends 3 2016/10/12 11:36:11;
+  tstp 3 2016/10/12 11:36:11;
+  cltt 3 2016/10/12 05:36:11;
+  binding state free;
+  hardware ethernet f8:c2:88:67:e4:64;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.181 {
+  starts 3 2016/10/12 08:26:18;
+  ends 3 2016/10/12 14:26:18;
+  tstp 3 2016/10/12 14:26:18;
+  cltt 3 2016/10/12 08:26:18;
+  binding state free;
+  hardware ethernet 5c:83:8f:80:a9:d3;
+  uid "\001\\\203\217\200\251\323";
+}
+lease 192.168.2.243 {
+  starts 3 2016/10/12 08:54:40;
+  ends 3 2016/10/12 14:54:40;
+  tstp 3 2016/10/12 14:54:40;
+  cltt 3 2016/10/12 08:54:40;
+  binding state free;
+  hardware ethernet b0:fa:eb:36:25:48;
+  uid "\000 $\300L\376cCH\245\345\015`A\361_\301";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.158 {
+  starts 3 2016/10/12 11:33:58;
+  ends 3 2016/10/12 17:33:58;
+  tstp 3 2016/10/12 17:33:58;
+  cltt 3 2016/10/12 11:33:58;
+  binding state free;
+  hardware ethernet 64:f6:9d:36:ae:04;
+  uid "\001d\366\2356\256\004";
+}
+lease 192.168.2.194 {
+  starts 3 2016/10/12 11:42:33;
+  ends 3 2016/10/12 17:42:33;
+  tstp 3 2016/10/12 17:42:33;
+  cltt 3 2016/10/12 11:42:33;
+  binding state free;
+  hardware ethernet 04:62:73:c5:4b:ba;
+  uid "\001\004bs\305K\272";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.208 {
+  starts 4 2016/10/13 03:36:41;
+  ends 4 2016/10/13 03:36:41;
+  tstp 4 2016/10/13 03:36:41;
+  cltt 4 2016/10/13 03:36:41;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d3;
+  uid "\000[\2109\244\204\302M\360\251w%\234\306\220\260\035";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.191 {
+  starts 4 2016/10/13 03:40:19;
+  ends 4 2016/10/13 03:42:19;
+  cltt 4 2016/10/13 03:40:19;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d3;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.174 {
+  starts 4 2016/10/13 08:07:00;
+  ends 4 2016/10/13 14:07:00;
+  tstp 4 2016/10/13 14:07:00;
+  cltt 4 2016/10/13 08:07:00;
+  binding state free;
+  hardware ethernet 54:a2:74:7e:11:0d;
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.144 {
+  starts 4 2016/10/13 08:25:23;
+  ends 4 2016/10/13 14:25:23;
+  tstp 4 2016/10/13 14:25:23;
+  cltt 4 2016/10/13 08:25:23;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d3;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.254 {
+  starts 5 2016/10/14 11:29:31;
+  ends 5 2016/10/14 11:31:31;
+  cltt 5 2016/10/14 11:29:31;
+  binding state free;
+  hardware ethernet fa:e2:aa:fb:60:b7;
+  uid "\001\372\342\252\373`\267";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.202 {
+  starts 5 2016/10/14 10:06:36;
+  ends 5 2016/10/14 16:06:36;
+  tstp 5 2016/10/14 16:06:36;
+  cltt 5 2016/10/14 10:06:36;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:ac:04;
+  uid "\001\364\017\033\036\254\004";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.186 {
+  starts 5 2016/10/14 10:18:16;
+  ends 5 2016/10/14 16:18:16;
+  tstp 5 2016/10/14 16:18:16;
+  cltt 5 2016/10/14 10:18:16;
+  binding state free;
+  hardware ethernet f8:c2:88:d9:8c:fa;
+  uid "\001\370\302\210\331\214\372";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.155 {
+  starts 5 2016/10/14 10:20:32;
+  ends 5 2016/10/14 16:20:32;
+  tstp 5 2016/10/14 16:20:32;
+  cltt 5 2016/10/14 10:20:32;
+  binding state free;
+  hardware ethernet 74:a0:2f:a4:dc:dc;
+  uid "\000Bu\010\310\257&H\321\255a\304\326l\201\220z";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.165 {
+  starts 1 2016/10/17 04:31:39;
+  ends 1 2016/10/17 04:33:39;
+  cltt 1 2016/10/17 04:31:39;
+  binding state free;
+  hardware ethernet 34:e4:c5:d0:27:37;
+  uid "\0014\344\305\320'7";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.164 {
+  starts 1 2016/10/17 02:25:53;
+  ends 1 2016/10/17 08:25:53;
+  tstp 1 2016/10/17 08:25:53;
+  cltt 1 2016/10/17 02:25:53;
+  binding state free;
+  hardware ethernet 4c:4e:35:09:6a:cb;
+  uid "\001LN5\011j\313";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.217 {
+  starts 1 2016/10/17 02:47:09;
+  ends 1 2016/10/17 08:47:09;
+  tstp 1 2016/10/17 08:47:09;
+  cltt 1 2016/10/17 02:47:09;
+  binding state free;
+  hardware ethernet 74:a0:2f:5f:70:25;
+  uid "\001t\240/_p%";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.223 {
+  starts 1 2016/10/17 03:38:47;
+  ends 1 2016/10/17 09:38:47;
+  tstp 1 2016/10/17 09:38:47;
+  cltt 1 2016/10/17 03:38:47;
+  binding state free;
+  hardware ethernet 5c:83:8f:80:a9:4f;
+  uid "\001\\\203\217\200\251O";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.172 {
+  starts 1 2016/10/17 08:48:32;
+  ends 1 2016/10/17 10:39:38;
+  tstp 1 2016/10/17 10:39:38;
+  cltt 1 2016/10/17 08:48:32;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:ac:04;
+  uid "\000\203\324\313\226x%FA\212\016v\374\"\240\336\354";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.209 {
+  starts 1 2016/10/17 08:52:26;
+  ends 1 2016/10/17 14:52:26;
+  tstp 1 2016/10/17 14:52:26;
+  cltt 1 2016/10/17 08:52:26;
+  binding state free;
+  hardware ethernet 64:f6:9d:36:ae:04;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.171 {
+  starts 1 2016/10/17 10:56:29;
+  ends 1 2016/10/17 16:56:29;
+  tstp 1 2016/10/17 16:56:29;
+  cltt 1 2016/10/17 10:56:29;
+  binding state free;
+  hardware ethernet 64:f6:9d:36:ae:05;
+}
+lease 192.168.2.185 {
+  starts 1 2016/10/17 14:18:26;
+  ends 1 2016/10/17 20:18:26;
+  tstp 1 2016/10/17 20:18:26;
+  cltt 1 2016/10/17 14:18:26;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:1c:01;
+  uid "\000\360bq\000\245\266H\270\264+\272\305\025\256\265\200";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.156 {
+  starts 2 2016/10/18 02:21:15;
+  ends 2 2016/10/18 08:21:15;
+  tstp 2 2016/10/18 08:21:15;
+  cltt 2 2016/10/18 02:21:15;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:1c:01;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.140 {
+  starts 2 2016/10/18 02:29:09;
+  ends 2 2016/10/18 08:29:09;
+  tstp 2 2016/10/18 08:29:09;
+  cltt 2 2016/10/18 02:29:09;
+  binding state free;
+  hardware ethernet 4c:4e:35:09:6a:cb;
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.183 {
+  starts 2 2016/10/18 08:31:42;
+  ends 2 2016/10/18 08:37:39;
+  tstp 2 2016/10/18 08:37:39;
+  cltt 2 2016/10/18 08:31:42;
+  binding state free;
+  hardware ethernet 64:f6:9d:36:ae:05;
+  uid "\000B\337\233\362\304DCR\257\212l\033\3763\226!";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.157 {
+  starts 2 2016/10/18 05:03:26;
+  ends 2 2016/10/18 11:03:26;
+  tstp 2 2016/10/18 11:03:26;
+  cltt 2 2016/10/18 05:03:26;
+  binding state free;
+  hardware ethernet 4c:4e:35:eb:24:d6;
+  uid "\001LN5\353$\326";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.247 {
+  starts 2 2016/10/18 05:14:13;
+  ends 2 2016/10/18 11:14:13;
+  tstp 2 2016/10/18 11:14:13;
+  cltt 2 2016/10/18 05:14:13;
+  binding state free;
+  hardware ethernet 58:f3:9c:ec:6f:58;
+  uid "\001X\363\234\354oX";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.161 {
+  starts 2 2016/10/18 05:53:29;
+  ends 2 2016/10/18 11:53:29;
+  tstp 2 2016/10/18 11:53:29;
+  cltt 2 2016/10/18 05:53:29;
+  binding state free;
+  hardware ethernet 00:0c:29:d3:7b:4c;
+  uid "\001\000\014)\323{L";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.169 {
+  starts 2 2016/10/18 06:21:13;
+  ends 2 2016/10/18 12:21:13;
+  tstp 2 2016/10/18 12:21:13;
+  cltt 2 2016/10/18 06:21:13;
+  binding state free;
+  hardware ethernet cc:46:d6:fc:2c:84;
+  uid "\000\346\355\200R'TJi\206\275\266\372\360\262q|";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.234 {
+  starts 2 2016/10/18 07:06:21;
+  ends 2 2016/10/18 13:06:21;
+  tstp 2 2016/10/18 13:06:21;
+  cltt 2 2016/10/18 07:06:21;
+  binding state free;
+  hardware ethernet 00:50:56:bb:06:02;
+  uid "\001\000PV\273\006\002";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.210 {
+  starts 2 2016/10/18 07:27:37;
+  ends 2 2016/10/18 13:27:37;
+  tstp 2 2016/10/18 13:27:37;
+  cltt 2 2016/10/18 07:27:37;
+  binding state free;
+  hardware ethernet 00:90:fa:ae:b0:ae;
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.221 {
+  starts 2 2016/10/18 07:31:26;
+  ends 2 2016/10/18 13:31:26;
+  tstp 2 2016/10/18 13:31:26;
+  cltt 2 2016/10/18 07:31:26;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:14;
+  uid "\001\000%\264\000\000\024";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.239 {
+  starts 2 2016/10/18 08:06:12;
+  ends 2 2016/10/18 14:06:12;
+  tstp 2 2016/10/18 14:06:12;
+  cltt 2 2016/10/18 08:06:12;
+  binding state free;
+  hardware ethernet 00:0c:29:35:85:80;
+  uid "\001\000\014)5\205\200";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.246 {
+  starts 2 2016/10/18 08:10:38;
+  ends 2 2016/10/18 14:10:38;
+  tstp 2 2016/10/18 14:10:38;
+  cltt 2 2016/10/18 08:10:38;
+  binding state free;
+  hardware ethernet 00:50:56:bb:72:78;
+  uid "\001\000PV\273rx";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.178 {
+  starts 2 2016/10/18 08:10:51;
+  ends 2 2016/10/18 14:10:51;
+  tstp 2 2016/10/18 14:10:51;
+  cltt 2 2016/10/18 08:10:51;
+  binding state free;
+  hardware ethernet 00:50:56:bb:34:12;
+  uid "\001\000PV\2734\022";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.215 {
+  starts 2 2016/10/18 08:11:33;
+  ends 2 2016/10/18 14:11:33;
+  tstp 2 2016/10/18 14:11:33;
+  cltt 2 2016/10/18 08:11:33;
+  binding state free;
+  hardware ethernet 00:0c:29:09:87:3a;
+  uid "\001\000\014)\011\207:";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.212 {
+  starts 2 2016/10/18 08:11:40;
+  ends 2 2016/10/18 14:11:40;
+  tstp 2 2016/10/18 14:11:40;
+  cltt 2 2016/10/18 08:11:40;
+  binding state free;
+  hardware ethernet 00:0c:29:1d:e1:a6;
+  uid "\001\000\014)\035\341\246";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.214 {
+  starts 2 2016/10/18 08:12:17;
+  ends 2 2016/10/18 14:12:17;
+  tstp 2 2016/10/18 14:12:17;
+  cltt 2 2016/10/18 08:12:17;
+  binding state free;
+  hardware ethernet 00:0c:29:48:8d:c5;
+  uid "\001\000\014)H\215\305";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.166 {
+  starts 2 2016/10/18 08:13:07;
+  ends 2 2016/10/18 14:13:07;
+  tstp 2 2016/10/18 14:13:07;
+  cltt 2 2016/10/18 08:13:07;
+  binding state free;
+  hardware ethernet 00:0c:29:c9:0d:4c;
+  uid "\001\000\014)\311\015L";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.225 {
+  starts 2 2016/10/18 08:13:30;
+  ends 2 2016/10/18 14:13:30;
+  tstp 2 2016/10/18 14:13:30;
+  cltt 2 2016/10/18 08:13:30;
+  binding state free;
+  hardware ethernet 00:0c:29:80:4e:d8;
+  uid "\001\000\014)\200N\330";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.226 {
+  starts 2 2016/10/18 08:13:45;
+  ends 2 2016/10/18 14:13:45;
+  tstp 2 2016/10/18 14:13:45;
+  cltt 2 2016/10/18 08:13:45;
+  binding state free;
+  hardware ethernet 00:0c:29:1d:f4:49;
+  uid "\001\000\014)\035\364I";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.216 {
+  starts 2 2016/10/18 08:13:53;
+  ends 2 2016/10/18 14:13:53;
+  tstp 2 2016/10/18 14:13:53;
+  cltt 2 2016/10/18 08:13:53;
+  binding state free;
+  hardware ethernet 00:50:56:a8:3a:fe;
+  uid "\001\000PV\250:\376";
+}
+lease 192.168.2.227 {
+  starts 2 2016/10/18 08:14:35;
+  ends 2 2016/10/18 14:14:35;
+  tstp 2 2016/10/18 14:14:35;
+  cltt 2 2016/10/18 08:14:35;
+  binding state free;
+  hardware ethernet 00:50:56:bb:28:56;
+  uid "\001\000PV\273(V";
+}
+lease 192.168.2.153 {
+  starts 2 2016/10/18 08:14:41;
+  ends 2 2016/10/18 14:14:41;
+  tstp 2 2016/10/18 14:14:41;
+  cltt 2 2016/10/18 08:14:41;
+  binding state free;
+  hardware ethernet 00:50:56:bb:00:2b;
+  uid "\001\000PV\273\000+";
+}
+lease 192.168.2.179 {
+  starts 2 2016/10/18 08:15:44;
+  ends 2 2016/10/18 14:15:44;
+  tstp 2 2016/10/18 14:15:44;
+  cltt 2 2016/10/18 08:15:44;
+  binding state free;
+  hardware ethernet 00:0c:29:c9:32:b6;
+  uid "\001\000\014)\3112\266";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.231 {
+  starts 2 2016/10/18 08:15:47;
+  ends 2 2016/10/18 14:15:47;
+  tstp 2 2016/10/18 14:15:47;
+  cltt 2 2016/10/18 08:15:47;
+  binding state free;
+  hardware ethernet 00:0c:29:88:83:68;
+  uid "\001\000\014)\210\203h";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.163 {
+  starts 2 2016/10/18 08:16:03;
+  ends 2 2016/10/18 14:16:03;
+  tstp 2 2016/10/18 14:16:03;
+  cltt 2 2016/10/18 08:16:03;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:24:60;
+  uid "\000\364\344D\"\211\363FH\231\232\004P\262\273\227x";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.184 {
+  starts 2 2016/10/18 08:28:52;
+  ends 2 2016/10/18 14:28:52;
+  tstp 2 2016/10/18 14:28:52;
+  cltt 2 2016/10/18 08:28:52;
+  binding state free;
+  hardware ethernet 00:0c:29:93:de:ea;
+  uid "\001\000\014)\223\336\352";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.180 {
+  starts 2 2016/10/18 08:48:23;
+  ends 2 2016/10/18 14:48:23;
+  tstp 2 2016/10/18 14:48:23;
+  cltt 2 2016/10/18 08:48:23;
+  binding state free;
+  hardware ethernet 00:10:18:eb:58:3e;
+  uid "\000\375\373\2405\200\217L\305\261q\243>\016\344\216\310";
+}
+lease 192.168.2.240 {
+  starts 2 2016/10/18 15:20:55;
+  ends 2 2016/10/18 15:22:55;
+  cltt 2 2016/10/18 15:20:55;
+  binding state free;
+  hardware ethernet 8c:60:4f:ea:ca:81;
+  uid "\000SSI194207EQ";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.245 {
+  starts 2 2016/10/18 14:04:44;
+  ends 2 2016/10/18 20:04:44;
+  tstp 2 2016/10/18 20:04:44;
+  cltt 2 2016/10/18 14:04:44;
+  binding state free;
+  hardware ethernet 00:c8:8b:99:ac:cb;
+  uid "\001\000\310\213\231\254\313";
+}
+lease 192.168.2.176 {
+  starts 3 2016/10/19 04:15:38;
+  ends 3 2016/10/19 04:38:38;
+  tstp 3 2016/10/19 04:38:38;
+  cltt 3 2016/10/19 04:15:38;
+  binding state free;
+  hardware ethernet 00:c8:8b:42:da:36;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH2004V0Q4";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.141 {
+  starts 3 2016/10/19 03:04:04;
+  ends 3 2016/10/19 05:33:15;
+  tstp 3 2016/10/19 05:33:15;
+  cltt 3 2016/10/19 03:04:04;
+  binding state free;
+  hardware ethernet 00:06:f6:e6:75:a4;
+  uid "Cisco Systems Inc|+|UCSC-C220-M3S|+|FCH1704V065";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.145 {
+  starts 3 2016/10/19 04:30:26;
+  ends 3 2016/10/19 05:48:13;
+  tstp 3 2016/10/19 05:48:13;
+  cltt 3 2016/10/19 04:30:26;
+  binding state free;
+  hardware ethernet 00:42:68:47:07:54;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH2010V0HQ";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.192 {
+  starts 3 2016/10/19 02:50:08;
+  ends 3 2016/10/19 08:50:08;
+  tstp 3 2016/10/19 08:50:08;
+  cltt 3 2016/10/19 02:50:08;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:0f;
+  uid "\001\000%\264\000\000\017";
+}
+lease 192.168.2.182 {
+  starts 3 2016/10/19 03:17:57;
+  ends 3 2016/10/19 09:17:57;
+  tstp 3 2016/10/19 09:17:57;
+  cltt 3 2016/10/19 03:17:57;
+  binding state free;
+  hardware ethernet d0:d0:fd:b6:1a:aa;
+  uid "Cisco Systems Inc|+|R460-4640810|+|QCI1444A0IC";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.228 {
+  starts 3 2016/10/19 04:00:14;
+  ends 3 2016/10/19 10:00:14;
+  tstp 3 2016/10/19 10:00:14;
+  cltt 3 2016/10/19 04:00:14;
+  binding state free;
+  hardware ethernet 3c:fd:fe:9f:1c:00;
+  uid "\001<\375\376\237\034\000";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.206 {
+  starts 3 2016/10/19 04:15:08;
+  ends 3 2016/10/19 10:15:08;
+  tstp 3 2016/10/19 10:15:08;
+  cltt 3 2016/10/19 04:15:08;
+  binding state free;
+  hardware ethernet 80:e0:1d:36:fe:04;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH1924V02F";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.189 {
+  starts 3 2016/10/19 04:16:49;
+  ends 3 2016/10/19 10:16:49;
+  tstp 3 2016/10/19 10:16:49;
+  cltt 3 2016/10/19 04:16:49;
+  binding state free;
+  hardware ethernet 80:e0:1d:36:fe:0e;
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.249 {
+  starts 3 2016/10/19 08:37:17;
+  ends 3 2016/10/19 14:37:17;
+  tstp 3 2016/10/19 14:37:17;
+  cltt 3 2016/10/19 08:37:17;
+  binding state free;
+  hardware ethernet cc:46:d6:fc:2d:27;
+  uid "\001\314F\326\374-'";
+}
+lease 192.168.2.201 {
+  starts 3 2016/10/19 11:06:06;
+  ends 3 2016/10/19 17:06:06;
+  tstp 3 2016/10/19 17:06:06;
+  cltt 3 2016/10/19 11:06:06;
+  binding state free;
+  hardware ethernet 00:25:b2:00:00:5e;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.251 {
+  starts 3 2016/10/19 13:57:23;
+  ends 3 2016/10/19 19:57:23;
+  tstp 3 2016/10/19 19:57:23;
+  cltt 3 2016/10/19 13:57:23;
+  binding state free;
+  hardware ethernet 00:06:f6:e6:75:a8;
+  uid "\000\036\302\034^<y@\242\233\312\211\204\275(\213\265";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.177 {
+  starts 4 2016/10/20 08:42:14;
+  ends 4 2016/10/20 08:43:32;
+  tstp 4 2016/10/20 08:43:32;
+  cltt 4 2016/10/20 08:42:14;
+  binding state free;
+  hardware ethernet a4:6c:2a:38:f9:75;
+  uid "C3260-FOX1847GEBR";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.250 {
+  starts 4 2016/10/20 08:42:14;
+  ends 4 2016/10/20 08:43:32;
+  tstp 4 2016/10/20 08:43:32;
+  cltt 4 2016/10/20 08:42:14;
+  binding state free;
+  hardware ethernet a4:6c:2a:38:f9:75;
+  uid "Cisco Systems Inc|+|UCSC-C3260-SIOC|+|FCH1911JK1H";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.222 {
+  starts 4 2016/10/20 08:42:25;
+  ends 4 2016/10/20 08:43:43;
+  tstp 4 2016/10/20 08:43:43;
+  cltt 4 2016/10/20 08:42:25;
+  binding state free;
+  hardware ethernet a4:6c:2a:38:f9:71;
+  uid "Cisco Systems Inc|+|UCSC-C3X60-SVRNB|+|FCH18457F2Y";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.154 {
+  starts 4 2016/10/20 07:09:18;
+  ends 4 2016/10/20 13:09:18;
+  tstp 4 2016/10/20 13:09:18;
+  cltt 4 2016/10/20 07:09:18;
+  binding state free;
+  hardware ethernet a0:ec:f9:cd:9a:a4;
+  uid "\000\364\351\037\224TXE\310\223o\321\240f/64";
+}
+lease 192.168.2.193 {
+  starts 4 2016/10/20 07:45:20;
+  ends 4 2016/10/20 13:45:20;
+  tstp 4 2016/10/20 13:45:20;
+  cltt 4 2016/10/20 07:45:20;
+  binding state free;
+  hardware ethernet 00:25:b5:00:01:2f;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.159 {
+  starts 5 2016/10/21 02:55:44;
+  ends 5 2016/10/21 08:55:44;
+  tstp 5 2016/10/21 08:55:44;
+  cltt 5 2016/10/21 02:55:44;
+  binding state free;
+  hardware ethernet a0:ec:f9:cd:9a:a4;
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.253 {
+  starts 5 2016/10/21 03:42:57;
+  ends 5 2016/10/21 09:42:57;
+  tstp 5 2016/10/21 09:42:57;
+  cltt 5 2016/10/21 03:42:57;
+  binding state free;
+  hardware ethernet fc:5b:39:5b:42:11;
+  uid "\001\374[9[B\021";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 192.168.2.168 {
+  starts 5 2016/10/21 09:39:55;
+  ends 5 2016/10/21 15:39:55;
+  tstp 5 2016/10/21 15:39:55;
+  cltt 5 2016/10/21 09:39:55;
+  binding state free;
+  hardware ethernet 00:90:fa:8d:1f:ea;
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.248 {
+  starts 0 2016/10/23 01:39:59;
+  ends 0 2016/10/23 07:39:59;
+  tstp 0 2016/10/23 07:39:59;
+  cltt 0 2016/10/23 01:39:59;
+  binding state free;
+  hardware ethernet a4:4c:11:a1:29:88;
+  uid "\001\244L\021\241)\210";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.175 {
+  starts 0 2016/10/23 05:25:06;
+  ends 0 2016/10/23 11:25:06;
+  tstp 0 2016/10/23 11:25:06;
+  cltt 0 2016/10/23 05:25:06;
+  binding state free;
+  hardware ethernet a4:4c:11:a1:29:88;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.204 {
+  starts 1 2016/10/24 05:34:46;
+  ends 1 2016/10/24 05:50:02;
+  tstp 1 2016/10/24 05:50:02;
+  cltt 1 2016/10/24 05:34:46;
+  binding state free;
+  hardware ethernet 00:78:88:a3:c2:ed;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4L|+|FCH2011V1TN";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 192.168.2.199 {
+  starts 1 2016/10/24 05:58:32;
+  ends 1 2016/10/24 06:11:29;
+  tstp 1 2016/10/24 06:11:29;
+  cltt 1 2016/10/24 05:58:32;
+  binding state free;
+  hardware ethernet 68:f7:28:31:56:3f;
+  uid "\001h\367(1V?";
+}
+lease 192.168.2.235 {
+  starts 1 2016/10/24 04:55:54;
+  ends 1 2016/10/24 06:25:12;
+  tstp 1 2016/10/24 06:25:12;
+  cltt 1 2016/10/24 04:55:54;
+  binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:f4;
+  uid "\0010\367\015m\032\364";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.205 {
+  starts 1 2016/10/24 09:27:29;
+  ends 1 2016/10/24 09:29:29;
+  cltt 1 2016/10/24 09:27:29;
+  binding state free;
+  hardware ethernet 00:25:b5:00:01:cf;
+  uid "\000w7\365\236D[DI\222$\336\241K\003\225 ";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.244 {
+  starts 1 2016/10/24 05:00:23;
+  ends 1 2016/10/24 11:00:23;
+  tstp 1 2016/10/24 11:00:23;
+  cltt 1 2016/10/24 05:00:23;
+  binding state free;
+  hardware ethernet 4c:4e:35:eb:24:d6;
+  uid "\000\035\011\355\216:yG\306\262\227\221\030\355\247\345\343";
+}
+lease 192.168.2.220 {
+  starts 1 2016/10/24 07:19:46;
+  ends 1 2016/10/24 13:19:46;
+  tstp 1 2016/10/24 13:19:46;
+  cltt 1 2016/10/24 07:19:46;
+  binding state free;
+  hardware ethernet 00:25:b5:00:00:2c;
+  uid "\000\316)`\341r\250C\276\275h`\355 \337w\303";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.188 {
+  starts 1 2016/10/24 08:41:56;
+  ends 1 2016/10/24 14:41:56;
+  tstp 1 2016/10/24 14:41:56;
+  cltt 1 2016/10/24 08:41:56;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:06;
+}
+lease 192.168.2.230 {
+  starts 1 2016/10/24 09:43:57;
+  ends 1 2016/10/24 14:44:52;
+  tstp 1 2016/10/24 14:44:52;
+  cltt 1 2016/10/24 09:43:57;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:7d;
+  uid "\000\262\253\267\007\316TA#\260\251\266\311|\304\214\222";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.152 {
+  starts 1 2016/10/24 08:45:41;
+  ends 1 2016/10/24 14:45:41;
+  tstp 1 2016/10/24 14:45:41;
+  cltt 1 2016/10/24 08:45:41;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:7d;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.229 {
+  starts 1 2016/10/24 09:37:25;
+  ends 1 2016/10/24 15:37:25;
+  tstp 1 2016/10/24 15:37:25;
+  cltt 1 2016/10/24 09:37:25;
+  binding state free;
+  hardware ethernet 00:fe:c8:e4:d4:14;
+  uid "\001\000\376\310\344\324\024";
+}
+lease 192.168.2.190 {
+  starts 1 2016/10/24 10:08:37;
+  ends 1 2016/10/24 16:08:37;
+  tstp 1 2016/10/24 16:08:37;
+  cltt 1 2016/10/24 10:08:37;
+  binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.151 {
+  starts 1 2016/10/24 10:44:49;
+  ends 1 2016/10/24 16:44:49;
+  tstp 1 2016/10/24 16:44:49;
+  cltt 1 2016/10/24 10:44:49;
+  binding state free;
+  hardware ethernet 00:25:b4:00:00:7c;
+  uid "\000\012(3e\212\011Nn\257]\274EI\"\260 ";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.195 {
+  starts 1 2016/10/24 12:58:11;
+  ends 1 2016/10/24 18:58:11;
+  tstp 1 2016/10/24 18:58:11;
+  cltt 1 2016/10/24 12:58:11;
+  binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:f5;
+  uid "\0010\367\015m\032\365";
+}
+lease 192.168.2.252 {
+  starts 2 2016/10/25 02:08:17;
+  ends 2 2016/10/25 08:08:17;
+  cltt 2 2016/10/25 02:08:17;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:25:b5:00:01:cf;
+  uid "\001\000%\265\000\001\317";
+  client-hostname "WIN-CNGRI5UHN7C";
+}
+lease 192.168.2.167 {
+  starts 2 2016/10/25 03:55:59;
+  ends 2 2016/10/25 09:55:59;
+  cltt 2 2016/10/25 03:55:59;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9e:1b:12;
+  uid "\001P=\345\236\033\022";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.147 {
+  starts 2 2016/10/25 05:08:42;
+  ends 2 2016/10/25 11:08:42;
+  cltt 2 2016/10/25 05:08:42;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:26:cb:85:63:41;
+  uid "\000cisco-0026.cb85.6341-Vl2";
+  set vendor-class-identifier = "Cisco Systems, Inc. Catalyst";
+  client-hostname "MT-3750-24-A8";
+}
+lease 192.168.2.173 {
+  starts 2 2016/10/25 05:17:52;
+  ends 2 2016/10/25 11:17:52;
+  cltt 2 2016/10/25 05:17:52;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d2;
+  uid "\001P=\345\236\023\322";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.224 {
+  starts 2 2016/10/25 05:22:10;
+  ends 2 2016/10/25 11:22:10;
+  cltt 2 2016/10/25 05:22:10;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:25:b4:00:00:4e;
+  uid "\000\253;\335t\232\253En\270w\244\021]\010\013\233";
+}
+lease 192.168.2.170 {
+  starts 2 2016/10/25 05:33:55;
+  ends 2 2016/10/25 11:33:55;
+  cltt 2 2016/10/25 05:33:55;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:22:bd:cd:d1:c8;
+  uid "Cisco Systems Inc|+|R210-2121605|+|QTI1336000J";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 192.168.2.203 {
+  starts 2 2016/10/25 05:50:29;
+  ends 2 2016/10/25 11:50:29;
+  cltt 2 2016/10/25 05:50:29;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:25:b4:00:00:3c;
+  uid "\001\000%\264\000\000<";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.198 {
+  starts 2 2016/10/25 06:04:27;
+  ends 2 2016/10/25 12:04:27;
+  cltt 2 2016/10/25 06:04:27;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:f5;
+  uid "\000\360\351\010\235\332<C*\242\374\257\352\345\177Yg";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.187 {
+  starts 2 2016/10/25 06:04:59;
+  ends 2 2016/10/25 12:04:59;
+  cltt 2 2016/10/25 06:04:59;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:f5;
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 192.168.2.219 {
+  starts 2 2016/10/25 06:16:44;
+  ends 2 2016/10/25 12:16:44;
+  cltt 2 2016/10/25 06:16:44;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:78:88:a3:c2:f2;
+  set vendor-class-identifier = "dhcpcd-6.11.5:Linux-4.4.0-31-generic:x86_64:GenuineIntel";
+  client-hostname "ubuntu";
+}
+lease 192.168.2.149 {
+  starts 2 2016/10/25 06:24:23;
+  ends 2 2016/10/25 12:24:23;
+  cltt 2 2016/10/25 06:24:23;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:25:b4:60:29:c1;
+  uid "\000cisco-0025.b460.29c1-Vl2";
+  set vendor-class-identifier = "Cisco Systems, Inc. Catalyst";
+  client-hostname "MT-3750-48-B3";
+}
+lease 10.107.248.106 {
+  starts 5 2016/10/07 11:22:13;
+  ends 5 2016/10/07 11:22:43;
+  tstp 5 2016/10/07 11:22:43;
+  cltt 5 2016/10/07 11:22:13;
+  binding state free;
+  hardware ethernet 50:7b:9d:91:58:97;
+  uid "\001P{\235\221X\227";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 10.107.248.105 {
+  starts 2 2016/10/18 05:57:23;
+  ends 2 2016/10/18 08:35:01;
+  tstp 2 2016/10/18 08:35:01;
+  cltt 2 2016/10/18 05:57:23;
+  binding state free;
+  hardware ethernet 00:a0:98:a2:60:05;
+  uid "\001\000\240\230\242`\005";
+}
+lease 10.107.248.107 {
+  starts 2 2016/10/18 09:17:22;
+  ends 2 2016/10/18 15:17:22;
+  tstp 2 2016/10/18 15:17:22;
+  cltt 2 2016/10/18 09:17:22;
+  binding state free;
+  hardware ethernet 68:f7:28:31:56:3a;
+  uid "\001h\367(1V:";
+}
+lease 10.107.248.104 {
+  starts 2 2016/10/25 03:46:23;
+  ends 2 2016/10/25 09:46:23;
+  cltt 2 2016/10/25 03:46:23;
+  binding state active;
+  next binding state free;
+  hardware ethernet 88:5a:92:88:20:4e;
+  uid "\001\210Z\222\210 N";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 10.107.248.103 {
+  starts 2 2016/10/25 03:54:54;
+  ends 2 2016/10/25 09:54:54;
+  cltt 2 2016/10/25 03:54:54;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:02:a5:d9;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 10.107.248.102 {
+  starts 2 2016/10/25 06:31:19;
+  ends 2 2016/10/25 12:31:19;
+  cltt 2 2016/10/25 06:31:19;
+  binding state active;
+  next binding state free;
+  hardware ethernet 88:5a:92:88:20:48;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3S2|+|FCH1741V02E";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  client-hostname "C240-FCH1741V02E";
+}
+lease 10.126.141.153 {
+  starts 3 2016/10/19 06:12:30;
+  ends 3 2016/10/19 12:12:30;
+  tstp 3 2016/10/19 12:12:30;
+  cltt 3 2016/10/19 06:12:30;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:ab:fe;
+  uid "Cisco Systems Inc|+|UCSC-C220-M4S|+|FCH1823V1Y1";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 10.126.141.72 {
+  starts 3 2016/10/19 06:26:25;
+  ends 3 2016/10/19 12:26:25;
+  tstp 3 2016/10/19 12:26:25;
+  cltt 3 2016/10/19 06:26:25;
+  binding state free;
+  hardware ethernet 00:35:1a:3d:fd:36;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4S|+|FCH2003V27W";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/14:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.135 {
+  starts 3 2016/10/19 06:34:49;
+  ends 3 2016/10/19 12:34:49;
+  tstp 3 2016/10/19 12:34:49;
+  cltt 3 2016/10/19 06:34:49;
+  binding state free;
+  hardware ethernet 74:a2:e6:d5:3f:ea;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4SX|+|FCH1904V1Q9";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/25:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.146 {
+  starts 3 2016/10/19 06:37:34;
+  ends 3 2016/10/19 12:37:34;
+  tstp 3 2016/10/19 12:37:34;
+  cltt 3 2016/10/19 06:37:34;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:79:c4;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4S2|+|FCH1827V06M";
+  set vendor-class-identifier = "ciscopnp";
+}
+lease 10.126.141.126 {
+  starts 3 2016/10/19 06:40:18;
+  ends 3 2016/10/19 12:40:18;
+  tstp 3 2016/10/19 12:40:18;
+  cltt 3 2016/10/19 06:40:18;
+  binding state free;
+  hardware ethernet 80:e0:1d:36:fe:0e;
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/48:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.140 {
+  starts 3 2016/10/19 06:53:33;
+  ends 3 2016/10/19 12:53:33;
+  tstp 3 2016/10/19 12:53:33;
+  cltt 3 2016/10/19 06:53:33;
+  binding state free;
+  hardware ethernet 00:fe:c8:e4:cf:e4;
+  uid "\001\000\376\310\344\317\344";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/5:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.119 {
+  starts 3 2016/10/19 06:53:41;
+  ends 3 2016/10/19 12:53:41;
+  tstp 3 2016/10/19 12:53:41;
+  cltt 3 2016/10/19 06:53:41;
+  binding state free;
+  hardware ethernet 00:c8:8b:42:da:3d;
+  uid "\001\000\310\213B\332=";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/2:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.92 {
+  starts 3 2016/10/19 07:05:24;
+  ends 3 2016/10/19 13:05:24;
+  tstp 3 2016/10/19 13:05:24;
+  cltt 3 2016/10/19 07:05:24;
+  binding state free;
+  hardware ethernet 00:fe:c8:e4:cf:de;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4SX|+|FCH1950V10X";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/2:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.176 {
+  starts 3 2016/10/19 07:14:24;
+  ends 3 2016/10/19 13:14:24;
+  tstp 3 2016/10/19 13:14:24;
+  cltt 3 2016/10/19 07:14:24;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:7c:3c;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4S|+|FCH1825V2L5";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/31:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.192 {
+  starts 3 2016/10/19 07:27:25;
+  ends 3 2016/10/19 13:27:25;
+  tstp 3 2016/10/19 13:27:25;
+  cltt 3 2016/10/19 07:27:25;
+  binding state free;
+  hardware ethernet f4:0f:1b:1e:67:ac;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4SX|+|FCH1828V291";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/14:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.168 {
+  starts 3 2016/10/19 08:06:10;
+  ends 3 2016/10/19 14:06:10;
+  tstp 3 2016/10/19 14:06:10;
+  cltt 3 2016/10/19 08:06:10;
+  binding state free;
+  hardware ethernet cc:46:d6:fc:2c:7e;
+  uid "Cisco Systems Inc|+|UCSC-C220-M4L|+|FCH1950V23M";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/11:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.141 {
+  starts 4 2016/10/20 02:48:40;
+  ends 4 2016/10/20 08:48:40;
+  tstp 4 2016/10/20 08:48:40;
+  cltt 4 2016/10/20 02:48:40;
+  binding state free;
+  hardware ethernet 00:42:68:47:07:54;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH2010V0HQ";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/11:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.101 {
+  starts 4 2016/10/20 02:52:49;
+  ends 4 2016/10/20 08:52:49;
+  tstp 4 2016/10/20 08:52:49;
+  cltt 4 2016/10/20 02:52:49;
+  binding state free;
+  hardware ethernet 54:a2:74:7e:11:0d;
+  uid "\001T\242t~\021\015";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/2:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.96 {
+  starts 4 2016/10/20 03:49:15;
+  ends 4 2016/10/20 09:49:15;
+  tstp 4 2016/10/20 09:49:15;
+  cltt 4 2016/10/20 03:49:15;
+  binding state free;
+  hardware ethernet 84:b8:02:5b:5c:38;
+  uid "Cisco Systems Inc|+|UCSC-C3260-SIOC|+|FCH1905J5CF";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/25:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.180 {
+  starts 4 2016/10/20 04:55:40;
+  ends 4 2016/10/20 10:55:40;
+  tstp 4 2016/10/20 10:55:40;
+  cltt 4 2016/10/20 04:55:40;
+  binding state free;
+  hardware ethernet 84:b8:02:5b:5f:1c;
+  uid "C3260-FOX1847GEB0";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/38:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.199 {
+  starts 4 2016/10/20 04:59:57;
+  ends 4 2016/10/20 10:59:57;
+  tstp 4 2016/10/20 10:59:57;
+  cltt 4 2016/10/20 04:59:57;
+  binding state free;
+  hardware ethernet 80:e0:1d:36:fe:0e;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/45:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.183 {
+  starts 4 2016/10/20 05:05:28;
+  ends 4 2016/10/20 11:05:28;
+  tstp 4 2016/10/20 11:05:28;
+  cltt 4 2016/10/20 05:05:28;
+  binding state free;
+  hardware ethernet 80:e0:1d:36:fe:0e;
+  uid "\001\200\340\0356\376\016";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/8:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.81 {
+  starts 4 2016/10/20 05:25:13;
+  ends 4 2016/10/20 11:25:13;
+  tstp 4 2016/10/20 11:25:13;
+  cltt 4 2016/10/20 05:25:13;
+  binding state free;
+  hardware ethernet d0:72:dc:5a:51:ff;
+  uid "\001\320r\334ZQ\377";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/23:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.155 {
+  starts 4 2016/10/20 14:36:22;
+  ends 4 2016/10/20 14:38:22;
+  cltt 4 2016/10/20 14:36:22;
+  binding state free;
+  hardware ethernet 64:f6:9d:79:da:52;
+  uid "\000\"\313\330J\253\346E\022\253\351\266\241_\200]\375";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/33:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.147 {
+  starts 4 2016/10/20 08:40:43;
+  ends 4 2016/10/20 14:40:43;
+  tstp 4 2016/10/20 14:40:43;
+  cltt 4 2016/10/20 08:40:43;
+  binding state free;
+  hardware ethernet 18:8b:9d:44:2e:cc;
+  uid "Cisco Systems Inc|+|UCSC-C220-M4S|+|FCH1926V1D8";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/32:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.124 {
+  starts 4 2016/10/20 08:43:33;
+  ends 4 2016/10/20 14:43:33;
+  tstp 4 2016/10/20 14:43:33;
+  cltt 4 2016/10/20 08:43:33;
+  binding state free;
+  hardware ethernet a4:6c:2a:38:f9:4e;
+  uid "C3260-FOX1847GEBR";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/30:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.172 {
+  starts 4 2016/10/20 10:43:52;
+  ends 4 2016/10/20 16:43:52;
+  tstp 4 2016/10/20 16:43:52;
+  cltt 4 2016/10/20 10:43:52;
+  binding state free;
+  hardware ethernet f0:7f:06:26:c1:ac;
+  uid "Cisco Systems Inc|+|UCSC-C3X60-SVRNB|+|FCH1827K9YC";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/34:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.102 {
+  starts 4 2016/10/20 13:54:41;
+  ends 4 2016/10/20 19:54:41;
+  tstp 4 2016/10/20 19:54:41;
+  cltt 4 2016/10/20 13:54:41;
+  binding state free;
+  hardware ethernet 00:78:88:a3:de:10;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4L|+|FCH2012V1LQ";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/35:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.63 {
+  starts 5 2016/10/21 02:09:45;
+  ends 5 2016/10/21 08:09:45;
+  tstp 5 2016/10/21 08:09:45;
+  cltt 5 2016/10/21 02:09:45;
+  binding state free;
+  hardware ethernet d0:72:dc:5a:51:fe;
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/47:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.99 {
+  starts 5 2016/10/21 03:27:22;
+  ends 5 2016/10/21 09:27:22;
+  tstp 5 2016/10/21 09:27:22;
+  cltt 5 2016/10/21 03:27:22;
+  binding state free;
+  hardware ethernet a8:0c:0d:90:fc:ca;
+  uid "\001\250\014\015\220\374\312";
+  set vendor-class-identifier = "udhcp 1.19.4";
+}
+lease 10.126.141.55 {
+  starts 5 2016/10/21 10:12:37;
+  ends 5 2016/10/21 10:14:37;
+  cltt 5 2016/10/21 10:12:37;
+  binding state free;
+  hardware ethernet a8:0c:0d:90:fc:ca;
+  uid "\000n\376J\362|\345F\010\257\335\300\224\260\276\333\275";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/29:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.122 {
+  starts 5 2016/10/21 06:52:37;
+  ends 5 2016/10/21 12:52:37;
+  tstp 5 2016/10/21 12:52:37;
+  cltt 5 2016/10/21 06:52:37;
+  binding state free;
+  hardware ethernet 00:0c:29:3a:2e:69;
+  uid "\001\000\014):.i";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/43:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.98 {
+  starts 1 2016/10/24 05:57:33;
+  ends 1 2016/10/24 05:58:31;
+  tstp 1 2016/10/24 05:58:31;
+  cltt 1 2016/10/24 05:57:33;
+  binding state free;
+  hardware ethernet 68:f7:28:31:56:3f;
+  uid "\001h\367(1V?";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/21:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.76 {
+  starts 1 2016/10/24 04:55:54;
+  ends 1 2016/10/24 06:25:12;
+  tstp 1 2016/10/24 06:25:12;
+  cltt 1 2016/10/24 04:55:54;
+  binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:f5;
+  uid "\0010\367\015m\032\365";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/17:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.69 {
+  starts 1 2016/10/24 00:48:49;
+  ends 1 2016/10/24 06:48:49;
+  tstp 1 2016/10/24 06:48:49;
+  cltt 1 2016/10/24 00:48:49;
+  binding state free;
+  hardware ethernet 00:42:68:47:02:14;
+  uid "\001\000BhG\002\024";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/18:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.74 {
+  starts 1 2016/10/24 03:54:24;
+  ends 1 2016/10/24 09:54:24;
+  tstp 1 2016/10/24 09:54:24;
+  cltt 1 2016/10/24 03:54:24;
+  binding state free;
+  hardware ethernet a0:ec:f9:cd:9a:a4;
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 10.126.141.134 {
+  starts 1 2016/10/24 12:58:11;
+  ends 1 2016/10/24 18:58:11;
+  tstp 1 2016/10/24 18:58:11;
+  cltt 1 2016/10/24 12:58:11;
+  binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:f4;
+  uid "\0010\367\015m\032\364";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/32:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.58 {
+  starts 2 2016/10/25 06:04:11;
+  ends 2 2016/10/25 06:06:11;
+  cltt 2 2016/10/25 06:04:11;
+  binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:f4;
+  uid "\000\360\351\010\235\332<C*\242\374\257\352\345\177Yg";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/31:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.115 {
+  starts 2 2016/10/25 03:34:48;
+  ends 2 2016/10/25 09:34:48;
+  cltt 2 2016/10/25 03:34:48;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:a8:65:0a;
+  uid "\001\000PV\250e\012";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/2:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.104 {
+  starts 2 2016/10/25 03:34:51;
+  ends 2 2016/10/25 09:34:51;
+  cltt 2 2016/10/25 03:34:51;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:42:68:6f:83:e8;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4L|+|FCH2013V063";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/16:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH2013V063";
+}
+lease 10.126.141.52 {
+  starts 2 2016/10/25 03:36:45;
+  ends 2 2016/10/25 09:36:45;
+  cltt 2 2016/10/25 03:36:45;
+  binding state active;
+  next binding state free;
+  hardware ethernet a0:ec:f9:cd:9a:9e;
+  uid "Cisco Systems Inc|+|UCSC-C220-M4L|+|FCH1845V1ZX";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/36:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C220-FCH1845V1ZX";
+}
+lease 10.126.141.108 {
+  starts 2 2016/10/25 03:39:37;
+  ends 2 2016/10/25 09:39:37;
+  cltt 2 2016/10/25 03:39:37;
+  binding state active;
+  next binding state free;
+  hardware ethernet d0:72:dc:5a:51:f8;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH1810V1YT";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  client-hostname "C460-FCH1810V1YT";
+}
+lease 10.126.141.144 {
+  starts 2 2016/10/25 04:06:45;
+  ends 2 2016/10/25 10:06:45;
+  cltt 2 2016/10/25 04:06:45;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:76:0f:f3;
+  uid "\001\000\014)v\017\363";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/30:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.131 {
+  starts 2 2016/10/25 04:19:50;
+  ends 2 2016/10/25 10:19:50;
+  cltt 2 2016/10/25 04:19:50;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9e:20:b2;
+  uid "Cisco Systems Inc|+|UCSC-C220-M3L|+|FCH1610V0FQ";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/8:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c220-m3";
+}
+lease 10.126.141.130 {
+  starts 2 2016/10/25 04:23:20;
+  ends 2 2016/10/25 10:23:20;
+  cltt 2 2016/10/25 04:23:20;
+  binding state active;
+  next binding state free;
+  hardware ethernet 80:e0:1d:36:fe:0a;
+  uid "\001\200\340\0356\376\012";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/35:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.65 {
+  starts 2 2016/10/25 04:26:28;
+  ends 2 2016/10/25 10:26:28;
+  cltt 2 2016/10/25 04:26:28;
+  binding state active;
+  next binding state free;
+  hardware ethernet c0:8c:60:15:71:60;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3L|+|FCH1730V0NG";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/13:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c240-m3";
+}
+lease 10.126.141.173 {
+  starts 2 2016/10/25 04:30:42;
+  ends 2 2016/10/25 10:30:42;
+  cltt 2 2016/10/25 04:30:42;
+  binding state active;
+  next binding state free;
+  hardware ethernet b0:fa:eb:97:02:7e;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3S|+|FCH1705V0SZ";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/47:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c240-m3";
+}
+lease 10.126.141.151 {
+  starts 2 2016/10/25 04:36:44;
+  ends 2 2016/10/25 10:36:44;
+  cltt 2 2016/10/25 04:36:44;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:4c:01:25;
+  uid "\001\000\014)L\001%";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/39:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-QFIKNK5D1GG";
+}
+lease 10.126.141.148 {
+  starts 2 2016/10/25 04:38:10;
+  ends 2 2016/10/25 10:38:10;
+  cltt 2 2016/10/25 04:38:10;
+  binding state active;
+  next binding state free;
+  hardware ethernet f4:4e:05:21:91:ba;
+  uid "Cisco Systems Inc|+|UCSC-C240-SNEBS|+|FCH1837V0GQ";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/19:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH1837V0GQ";
+}
+lease 10.126.141.184 {
+  starts 2 2016/10/25 04:45:14;
+  ends 2 2016/10/25 10:45:14;
+  cltt 2 2016/10/25 04:45:14;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:fe:c8:e4:d4:0e;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4L|+|FCH1950V30Y";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/46:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH1950V30Y";
+}
+lease 10.126.141.61 {
+  starts 2 2016/10/25 04:46:24;
+  ends 2 2016/10/25 10:46:24;
+  cltt 2 2016/10/25 04:46:24;
+  binding state active;
+  next binding state free;
+  hardware ethernet 3c:08:f6:96:fa:20;
+  uid "\001<\010\366\226\372 ";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/4:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.94 {
+  starts 2 2016/10/25 04:47:47;
+  ends 2 2016/10/25 10:47:47;
+  cltt 2 2016/10/25 04:47:47;
+  binding state active;
+  next binding state free;
+  hardware ethernet 64:f6:9d:79:da:52;
+  uid "\001d\366\235y\332R";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+}
+lease 10.126.141.182 {
+  starts 2 2016/10/25 04:52:17;
+  ends 2 2016/10/25 10:52:17;
+  cltt 2 2016/10/25 04:52:17;
+  binding state active;
+  next binding state free;
+  hardware ethernet 7c:ad:74:6e:d6:84;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3S|+|FCH1712V0LX";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/1:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "CIMCFCH1712V0LX";
+}
+lease 10.126.141.152 {
+  starts 2 2016/10/25 04:53:43;
+  ends 2 2016/10/25 10:53:43;
+  cltt 2 2016/10/25 04:53:43;
+  binding state active;
+  next binding state free;
+  hardware ethernet a4:4c:11:a1:29:82;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3S|+|WZP1713000B";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/29:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C24-WZP1713000B";
+}
+lease 10.126.141.127 {
+  starts 2 2016/10/25 04:55:21;
+  ends 2 2016/10/25 10:55:21;
+  cltt 2 2016/10/25 04:55:21;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:57:a8:af:1b:8e;
+  uid "Cisco Systems Inc|+|R210-2121605W|+|QCI1610A1T5";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/31:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.191 {
+  starts 2 2016/10/25 04:57:02;
+  ends 2 2016/10/25 10:57:02;
+  cltt 2 2016/10/25 04:57:02;
+  binding state active;
+  next binding state free;
+  hardware ethernet 4c:00:82:f3:ab:66;
+  uid "Cisco Systems Inc|+|C260-BASE-2646|+|FCH1726V0DC";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/5:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C260-FCH1726V0DC";
+}
+lease 10.126.141.170 {
+  starts 2 2016/10/25 04:57:51;
+  ends 2 2016/10/25 10:57:51;
+  cltt 2 2016/10/25 04:57:51;
+  binding state active;
+  next binding state free;
+  hardware ethernet 84:b8:02:5b:5f:1c;
+  uid "Cisco Systems Inc|+|UCSC-C3260-SIOC|+|FCH1905J5DX";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/10:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "UCS-C3260-FCH1905J5DX-1";
+}
+lease 10.126.141.142 {
+  starts 2 2016/10/25 04:58:28;
+  ends 2 2016/10/25 10:58:28;
+  cltt 2 2016/10/25 04:58:28;
+  binding state active;
+  next binding state free;
+  hardware ethernet f4:0f:1b:1e:5e:ec;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4S2|+|FCH1827V0PJ";
+  client-hostname "C240-FCH1827V0PJ";
+}
+lease 10.126.141.193 {
+  starts 2 2016/10/25 04:58:58;
+  ends 2 2016/10/25 10:58:58;
+  cltt 2 2016/10/25 04:58:58;
+  binding state active;
+  next binding state free;
+  hardware ethernet f4:0f:1b:1e:83:d0;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4SX|+|FCH1828V11M";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/36:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH1828V11M";
+}
+lease 10.126.141.136 {
+  starts 2 2016/10/25 04:59:52;
+  ends 2 2016/10/25 10:59:52;
+  cltt 2 2016/10/25 04:59:52;
+  binding state active;
+  next binding state free;
+  hardware ethernet 5c:83:8f:3e:f7:1b;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH1931V2C9";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/40:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C460-FCH1931V2C9";
+}
+lease 10.126.141.185 {
+  starts 2 2016/10/25 05:00:50;
+  ends 2 2016/10/25 11:00:50;
+  cltt 2 2016/10/25 05:00:50;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:35:d8;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3L|+|WZP1643001H";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/29:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C24-WZP1643001H";
+}
+lease 10.126.141.56 {
+  starts 2 2016/10/25 05:01:04;
+  ends 2 2016/10/25 11:01:04;
+  cltt 2 2016/10/25 05:01:04;
+  binding state active;
+  next binding state free;
+  hardware ethernet a4:4c:11:a1:03:6c;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3S|+|WZP16250017";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/38:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c24-m3";
+}
+lease 10.126.141.154 {
+  starts 2 2016/10/25 05:01:47;
+  ends 2 2016/10/25 11:01:47;
+  cltt 2 2016/10/25 05:01:47;
+  binding state active;
+  next binding state free;
+  hardware ethernet 54:a2:74:59:62:ee;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3L|+|FCH1919V1FD";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/40:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH1919V1FD";
+}
+lease 10.126.141.59 {
+  starts 2 2016/10/25 05:02:00;
+  ends 2 2016/10/25 11:02:00;
+  cltt 2 2016/10/25 05:02:00;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9e:1b:0c;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3L|+|FCH1610V077";
+  set vendor-class-identifier = "ciscopnp";
+  client-hostname "ucs-c240-m3";
+}
+lease 10.126.141.161 {
+  starts 2 2016/10/25 05:04:18;
+  ends 2 2016/10/25 11:04:18;
+  cltt 2 2016/10/25 05:04:18;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:78:88:a3:c2:ec;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4L|+|FCH2011V1TN";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/17:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH2011V1TN";
+}
+lease 10.126.141.195 {
+  starts 2 2016/10/25 05:05:48;
+  ends 2 2016/10/25 11:05:48;
+  cltt 2 2016/10/25 05:05:48;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:1a:ee;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3S|+|WZP16370068";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/12:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C24-WZP16370068";
+}
+lease 10.126.141.149 {
+  starts 2 2016/10/25 05:06:13;
+  ends 2 2016/10/25 11:06:13;
+  cltt 2 2016/10/25 05:06:13;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:42:68:47:02:0e;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH2010V0KG";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/29:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C460-FCH2010V0KG";
+}
+lease 10.126.141.67 {
+  starts 2 2016/10/25 05:07:42;
+  ends 2 2016/10/25 11:07:42;
+  cltt 2 2016/10/25 05:07:42;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:42:68:47:07:62;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH2010V0HT";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/15:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C460-FCH2010V0HT";
+}
+lease 10.126.141.156 {
+  starts 2 2016/10/25 05:09:05;
+  ends 2 2016/10/25 11:09:05;
+  cltt 2 2016/10/25 05:09:05;
+  binding state active;
+  next binding state free;
+  hardware ethernet a8:0c:0d:91:08:90;
+  uid "Cisco Systems Inc|+|UCSC-C22-M3S|+|WZP18110009";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/30:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C22-WZP18110009";
+}
+lease 10.126.141.62 {
+  starts 2 2016/10/25 05:12:29;
+  ends 2 2016/10/25 11:12:29;
+  cltt 2 2016/10/25 05:12:29;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:dc:9a:45;
+  set vendor-class-identifier = "MSFT 5.0";
+}
+lease 10.126.141.85 {
+  starts 2 2016/10/25 05:19:48;
+  ends 2 2016/10/25 11:19:48;
+  cltt 2 2016/10/25 05:19:48;
+  binding state active;
+  next binding state free;
+  hardware ethernet e0:2f:6d:bb:7f:fe;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3L|+|FCH1649V141";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/43:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c240-m3";
+}
+lease 10.126.141.177 {
+  starts 2 2016/10/25 05:20:21;
+  ends 2 2016/10/25 11:20:21;
+  cltt 2 2016/10/25 05:20:21;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:45:8a:63;
+  uid "\001\000\014)E\212c";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/8:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.64 {
+  starts 2 2016/10/25 05:24:14;
+  ends 2 2016/10/25 11:24:14;
+  cltt 2 2016/10/25 05:24:14;
+  binding state active;
+  next binding state free;
+  hardware ethernet b0:fa:eb:ab:ed:51;
+  uid "\001\260\372\353\253\355Q";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/18:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.100 {
+  starts 2 2016/10/25 05:26:09;
+  ends 2 2016/10/25 11:26:09;
+  cltt 2 2016/10/25 05:26:09;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9e:13:cc;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3L|+|FCH1610V052";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/11:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c240-m3";
+}
+lease 10.126.141.79 {
+  starts 2 2016/10/25 05:26:23;
+  ends 2 2016/10/25 11:26:23;
+  cltt 2 2016/10/25 05:26:23;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:50:9a;
+  uid "Cisco Systems Inc|+|UCSC-C22-M3S|+|WZP1650003A";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/37:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c22-m3";
+}
+lease 10.126.141.190 {
+  starts 2 2016/10/25 05:26:59;
+  ends 2 2016/10/25 11:26:59;
+  cltt 2 2016/10/25 05:26:59;
+  binding state active;
+  next binding state free;
+  hardware ethernet 64:f6:9d:79:da:4c;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4L|+|FCH1852V2LL";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/30:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH1852V2LL";
+}
+lease 10.126.141.105 {
+  starts 2 2016/10/25 05:37:15;
+  ends 2 2016/10/25 11:37:15;
+  cltt 2 2016/10/25 05:37:15;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:c8:8b:42:da:3c;
+  uid "\001\000\310\213B\332<";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/18:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.54 {
+  starts 2 2016/10/25 05:37:20;
+  ends 2 2016/10/25 11:37:20;
+  cltt 2 2016/10/25 05:37:20;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9d:fb:12;
+  uid "Cisco Systems Inc|+|R250-2480805W|+|FCH1607V02V";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/6:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.110 {
+  starts 2 2016/10/25 05:39:32;
+  ends 2 2016/10/25 11:39:32;
+  cltt 2 2016/10/25 05:39:32;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:42:68:47:07:68;
+  set vendor-class-identifier = "dhcpcd-6.11.5:Linux-4.4.0-31-generic:x86_64:GenuineIntel";
+  client-hostname "ubuntu";
+}
+lease 10.126.141.95 {
+  starts 2 2016/10/25 05:43:20;
+  ends 2 2016/10/25 11:43:20;
+  cltt 2 2016/10/25 05:43:20;
+  binding state active;
+  next binding state free;
+  hardware ethernet f4:0f:1b:1e:83:88;
+  uid "Cisco Systems Inc|+|UCSC-C240-M4L|+|FCH1828V1SR";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/2:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C240-FCH1828V1SR";
+}
+lease 10.126.141.200 {
+  starts 2 2016/10/25 05:45:35;
+  ends 2 2016/10/25 11:45:35;
+  cltt 2 2016/10/25 05:45:35;
+  binding state active;
+  next binding state free;
+  hardware ethernet 74:a0:2f:5f:c9:1c;
+  uid "Cisco Systems Inc|+|UCSC-C3X60-SVRNB|+|FCH18457F2Y";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/37:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C3X60M3-FCH18457F2Y";
+}
+lease 10.126.141.113 {
+  starts 2 2016/10/25 05:46:19;
+  ends 2 2016/10/25 11:46:19;
+  cltt 2 2016/10/25 05:46:19;
+  binding state active;
+  next binding state free;
+  hardware ethernet a4:6c:2a:38:f9:4e;
+  uid "Cisco Systems Inc|+|UCSC-C3260-SIOC|+|FCH1911JK1H";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "UCS-C3260-FCH1911JK1H-1";
+}
+lease 10.126.141.158 {
+  starts 2 2016/10/25 05:46:34;
+  ends 2 2016/10/25 11:46:34;
+  cltt 2 2016/10/25 05:46:34;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:bd:e2:e7;
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/12:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.103 {
+  starts 2 2016/10/25 05:46:46;
+  ends 2 2016/10/25 11:46:46;
+  cltt 2 2016/10/25 05:46:46;
+  binding state active;
+  next binding state free;
+  hardware ethernet 54:a2:74:7e:11:08;
+  uid "Cisco Systems Inc|+|UCSC-C220-M3S|+|FCH1919V0E0";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/18:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C220-FCH1919V0E0";
+}
+lease 10.126.141.73 {
+  starts 2 2016/10/25 05:49:12;
+  ends 2 2016/10/25 11:49:12;
+  cltt 2 2016/10/25 05:49:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:ac:06:1d;
+  uid "\001\000\014)\254\006\035";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/41:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-CBUIAUR5G5T";
+}
+lease 10.126.141.129 {
+  starts 2 2016/10/25 05:49:12;
+  ends 2 2016/10/25 11:49:12;
+  cltt 2 2016/10/25 05:49:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:b3:54:48;
+  uid "\001\000\014)\263TH";
+  client-hostname "ADMINSS-H6KOOAR";
+}
+lease 10.126.141.93 {
+  starts 2 2016/10/25 05:49:43;
+  ends 2 2016/10/25 11:49:43;
+  cltt 2 2016/10/25 05:49:43;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:c6:93:6b;
+  uid "\001\000\014)\306\223k";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/21:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-9PS6QDDPDTS";
+}
+lease 10.126.141.78 {
+  starts 2 2016/10/25 05:50:06;
+  ends 2 2016/10/25 11:50:06;
+  cltt 2 2016/10/25 05:50:06;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:a3:22:2e;
+  uid "\001\000PV\243\".";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/45:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "VC2";
+}
+lease 10.126.141.163 {
+  starts 2 2016/10/25 05:50:08;
+  ends 2 2016/10/25 11:50:08;
+  cltt 2 2016/10/25 05:50:08;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:f4:9e:26;
+  uid "\001\000\014)\364\236&";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/26:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-SOU2JTG95GL";
+}
+lease 10.126.141.138 {
+  starts 2 2016/10/25 05:50:17;
+  ends 2 2016/10/25 11:50:17;
+  cltt 2 2016/10/25 05:50:17;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:40:c8:e4;
+  uid "\001\000\014)@\310\344";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/30:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ViewClient1";
+}
+lease 10.126.141.196 {
+  starts 2 2016/10/25 05:50:24;
+  ends 2 2016/10/25 11:50:24;
+  cltt 2 2016/10/25 05:50:24;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:79:3f;
+  uid "\001\000PV\206y?";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/8:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-6D44PJFQH7D";
+}
+lease 10.126.141.137 {
+  starts 2 2016/10/25 05:50:31;
+  ends 2 2016/10/25 11:50:31;
+  cltt 2 2016/10/25 05:50:31;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:bb:23:3d;
+  uid "\001\000PV\273#=";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/33:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.57 {
+  starts 2 2016/10/25 05:50:32;
+  ends 2 2016/10/25 11:50:32;
+  cltt 2 2016/10/25 05:50:32;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:78:b6;
+  uid "\001\000PV\206x\266";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/35:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.117 {
+  starts 2 2016/10/25 05:50:35;
+  ends 2 2016/10/25 11:50:35;
+  cltt 2 2016/10/25 05:50:35;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:47:4a:64;
+  uid "\001\000\014)GJd";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/34:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-7CV2O3RGH2V";
+}
+lease 10.126.141.111 {
+  starts 2 2016/10/25 05:50:43;
+  ends 2 2016/10/25 11:50:43;
+  cltt 2 2016/10/25 05:50:43;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:bb:0c:c4;
+  uid "\001\000PV\273\014\304";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/41:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.114 {
+  starts 2 2016/10/25 05:50:56;
+  ends 2 2016/10/25 11:50:56;
+  cltt 2 2016/10/25 05:50:56;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:40:44:14;
+  uid "\001\000\014)@D\024";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/36:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ADMINSS-U40M65O";
+}
+lease 10.126.141.91 {
+  starts 2 2016/10/25 05:50:59;
+  ends 2 2016/10/25 11:50:59;
+  cltt 2 2016/10/25 05:50:59;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:4d:ef;
+  uid "\001\000PV\206M\357";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/45:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.97 {
+  starts 2 2016/10/25 05:51:12;
+  ends 2 2016/10/25 11:51:12;
+  cltt 2 2016/10/25 05:51:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:23:9a;
+  uid "\001\000PV\206#\232";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/41:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.90 {
+  starts 2 2016/10/25 05:51:20;
+  ends 2 2016/10/25 11:51:20;
+  cltt 2 2016/10/25 05:51:20;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:a8:51:5f;
+  uid "\001\000PV\250Q_";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/11:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.186 {
+  starts 2 2016/10/25 05:51:42;
+  ends 2 2016/10/25 11:51:42;
+  cltt 2 2016/10/25 05:51:42;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:88:83:4a;
+  uid "\001\000\014)\210\203J";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/27:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.159 {
+  starts 2 2016/10/25 05:51:43;
+  ends 2 2016/10/25 11:51:43;
+  cltt 2 2016/10/25 05:51:43;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:13:db:b1;
+  uid "\001\000\014)\023\333\261";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "WIN-4ONORDH6K5O";
+}
+lease 10.126.141.179 {
+  starts 2 2016/10/25 05:51:48;
+  ends 2 2016/10/25 11:51:48;
+  cltt 2 2016/10/25 05:51:48;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:4c:97;
+  uid "\001\000PV\206L\227";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/8:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.162 {
+  starts 2 2016/10/25 05:51:50;
+  ends 2 2016/10/25 11:51:50;
+  cltt 2 2016/10/25 05:51:50;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:42:6e;
+  uid "\001\000PV\206Bn";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/46:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.123 {
+  starts 2 2016/10/25 05:51:53;
+  ends 2 2016/10/25 11:51:53;
+  cltt 2 2016/10/25 05:51:53;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:a8:36:2d;
+  uid "\001\000PV\2506-";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/27:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.171 {
+  starts 2 2016/10/25 05:52:12;
+  ends 2 2016/10/25 11:52:12;
+  cltt 2 2016/10/25 05:52:12;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:47:35:c0;
+  uid "\001\000\014)G5\300";
+  client-hostname "WIN-2PN1KPQP1EU";
+}
+lease 10.126.141.194 {
+  starts 2 2016/10/25 05:52:23;
+  ends 2 2016/10/25 11:52:23;
+  cltt 2 2016/10/25 05:52:23;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:5c:57;
+  uid "\001\000PV\206\\W";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/25:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.71 {
+  starts 2 2016/10/25 05:52:42;
+  ends 2 2016/10/25 11:52:42;
+  cltt 2 2016/10/25 05:52:42;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:01:dc:b3;
+  uid "\001\000\014)\001\334\263";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/48:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.88 {
+  starts 2 2016/10/25 05:52:56;
+  ends 2 2016/10/25 11:52:56;
+  cltt 2 2016/10/25 05:52:56;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:ef:3c:57;
+  uid "\001\000\014)\357<W";
+  client-hostname "WIN-54SJBRDACHO";
+}
+lease 10.126.141.107 {
+  starts 2 2016/10/25 05:53:07;
+  ends 2 2016/10/25 11:53:07;
+  cltt 2 2016/10/25 05:53:07;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:13:db:9d;
+  uid "\001\000\014)\023\333\235";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/27:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-4ONORDH6K5O";
+}
+lease 10.126.141.116 {
+  starts 2 2016/10/25 05:53:20;
+  ends 2 2016/10/25 11:53:20;
+  cltt 2 2016/10/25 05:53:20;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:bb:41:6d;
+  uid "\001\000PV\273Am";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/18:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.181 {
+  starts 2 2016/10/25 05:53:33;
+  ends 2 2016/10/25 11:53:33;
+  cltt 2 2016/10/25 05:53:33;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:36:57;
+  uid "\0010\367\015m6W";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/20:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-1EMOPG2B73D";
+}
+lease 10.126.141.169 {
+  starts 2 2016/10/25 05:53:48;
+  ends 2 2016/10/25 11:53:48;
+  cltt 2 2016/10/25 05:53:48;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:d3:7b:42;
+  uid "\001\000\014)\323{B";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/43:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.164 {
+  starts 2 2016/10/25 05:53:55;
+  ends 2 2016/10/25 11:53:55;
+  cltt 2 2016/10/25 05:53:55;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:57:ec;
+  uid "\001\000PV\206W\354";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/35:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.189 {
+  starts 2 2016/10/25 05:53:58;
+  ends 2 2016/10/25 11:53:58;
+  cltt 2 2016/10/25 05:53:58;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:72:53;
+  uid "\001\000PV\206rS";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/35:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.160 {
+  starts 2 2016/10/25 05:53:59;
+  ends 2 2016/10/25 11:53:59;
+  cltt 2 2016/10/25 05:53:59;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:bb:05:64;
+  uid "\001\000PV\273\005d";
+  set vendor-class-identifier = "MSFT 5.0";
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.187 {
+  starts 2 2016/10/25 05:54:08;
+  ends 2 2016/10/25 11:54:08;
+  cltt 2 2016/10/25 05:54:08;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:bb:44:43;
+  uid "\001\000PV\273DC";
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.178 {
+  starts 2 2016/10/25 05:54:15;
+  ends 2 2016/10/25 11:54:15;
+  cltt 2 2016/10/25 05:54:15;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:40:fe:77;
+  uid "\001\000\014)@\376w";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/27:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-TEGK25I7VMM";
+}
+lease 10.126.141.83 {
+  starts 2 2016/10/25 05:54:42;
+  ends 2 2016/10/25 11:54:42;
+  cltt 2 2016/10/25 05:54:42;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:93:de:e0;
+  uid "\001\000\014)\223\336\340";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/46:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.112 {
+  starts 2 2016/10/25 05:54:53;
+  ends 2 2016/10/25 11:54:53;
+  cltt 2 2016/10/25 05:54:53;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:46:e5:6d;
+  uid "\001\000\014)F\345m";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/43:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.109 {
+  starts 2 2016/10/25 05:54:54;
+  ends 2 2016/10/25 11:54:54;
+  cltt 2 2016/10/25 05:54:54;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:41:ca;
+  uid "\001\000PV\206A\312";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/10:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.165 {
+  starts 2 2016/10/25 06:02:25;
+  ends 2 2016/10/25 12:02:25;
+  cltt 2 2016/10/25 06:02:25;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:f7:b1:57;
+  uid "\001\000\014)\367\261W";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/38:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ADMINSS-0I9K55I";
+}
+lease 10.126.141.70 {
+  starts 2 2016/10/25 06:04:38;
+  ends 2 2016/10/25 12:04:38;
+  cltt 2 2016/10/25 06:04:38;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:86:54:5c;
+  uid "\001\000PV\206T\\";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/29:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.132 {
+  starts 2 2016/10/25 06:06:00;
+  ends 2 2016/10/25 12:06:00;
+  cltt 2 2016/10/25 06:06:00;
+  binding state active;
+  next binding state free;
+  hardware ethernet 4c:4e:35:eb:24:d2;
+  uid "Cisco Systems Inc|+|UCSC-C220-M3S|+|FCH1712V03G";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/10:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "CIMCFCH1712V03G";
+}
+lease 10.126.141.89 {
+  starts 2 2016/10/25 06:11:47;
+  ends 2 2016/10/25 12:11:47;
+  cltt 2 2016/10/25 06:11:47;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:50:56:bb:4d:ef;
+  uid "\001\000PV\273M\357";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/10:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "WIN-EP3L4FPRGHL";
+}
+lease 10.126.141.188 {
+  starts 2 2016/10/25 06:12:38;
+  ends 2 2016/10/25 12:12:38;
+  cltt 2 2016/10/25 06:12:38;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:c8:8b:42:da:36;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH2004V0Q4";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/45:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C460-FCH2004V0Q4";
+}
+lease 10.126.141.175 {
+  starts 2 2016/10/25 06:13:25;
+  ends 2 2016/10/25 12:13:25;
+  cltt 2 2016/10/25 06:13:25;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:25:b4:00:00:06;
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/22:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.82 {
+  starts 2 2016/10/25 06:18:24;
+  ends 2 2016/10/25 12:18:24;
+  cltt 2 2016/10/25 06:18:24;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:0c:29:9d:66:67;
+  uid "\001\000\014)\235fg";
+  client-hostname "WIN-9EQMAUG23KV";
+}
+lease 10.126.141.174 {
+  starts 2 2016/10/25 06:20:19;
+  ends 2 2016/10/25 12:20:19;
+  cltt 2 2016/10/25 06:20:19;
+  binding state active;
+  next binding state free;
+  hardware ethernet 7c:0e:ce:5a:eb:e0;
+  uid "Cisco Systems Inc|+|UCSC-C3X60-SVRNB|+|FCH182870PD";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/32:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C3X60M3-FCH182870PD";
+}
+lease 10.126.141.128 {
+  starts 2 2016/10/25 06:21:34;
+  ends 2 2016/10/25 12:21:34;
+  cltt 2 2016/10/25 06:21:34;
+  binding state active;
+  next binding state free;
+  hardware ethernet 54:a2:74:7e:11:0c;
+  uid "\001T\242t~\021\014";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/5:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.51 {
+  starts 2 2016/10/25 06:23:49;
+  ends 2 2016/10/25 12:23:49;
+  cltt 2 2016/10/25 06:23:49;
+  binding state active;
+  next binding state free;
+  hardware ethernet a8:0c:0d:90:fc:c4;
+  uid "Cisco Systems Inc|+|UCSC-C22-M3L|+|WZP18080MVU";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  client-hostname "C22-WZP18080MVU";
+}
+lease 10.126.141.87 {
+  starts 2 2016/10/25 06:27:02;
+  ends 2 2016/10/25 12:27:02;
+  cltt 2 2016/10/25 06:27:02;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9e:13:d3;
+  uid "\001P=\345\236\023\323";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/28:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.125 {
+  starts 2 2016/10/25 06:27:29;
+  ends 2 2016/10/25 12:27:29;
+  cltt 2 2016/10/25 06:27:29;
+  binding state active;
+  next binding state free;
+  hardware ethernet 54:a2:74:7e:11:0c;
+  option agent.circuit-id "SW-ACC-01:Gi1/0/46:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+}
+lease 10.126.141.150 {
+  starts 2 2016/10/25 06:28:21;
+  ends 2 2016/10/25 12:28:21;
+  cltt 2 2016/10/25 06:28:21;
+  binding state active;
+  next binding state free;
+  hardware ethernet 3c:08:f6:96:fa:1a;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH1801V0HB";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/45:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C460-FCH1801V0HB";
+}
+lease 10.126.141.86 {
+  starts 2 2016/10/25 06:29:26;
+  ends 2 2016/10/25 12:29:26;
+  cltt 2 2016/10/25 06:29:26;
+  binding state active;
+  next binding state free;
+  hardware ethernet cc:46:d6:22:29:08;
+  uid "Cisco Systems Inc|+|UCSC-C3X60-M4SRB|+|FCH1944J8QF";
+  set vendor-class-identifier = "MSFT 5.0";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/4:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C3X60M4-FCH1944J8QF";
+}
+lease 10.126.141.118 {
+  starts 2 2016/10/25 06:29:33;
+  ends 2 2016/10/25 12:29:33;
+  cltt 2 2016/10/25 06:29:33;
+  binding state active;
+  next binding state free;
+  hardware ethernet 5c:83:8f:3e:ff:03;
+  uid "Cisco Systems Inc|+|UCSC-C460-M4|+|FCH1931V2CG";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/16:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C460-FCH1931V2CG";
+}
+lease 10.126.141.167 {
+  starts 2 2016/10/25 06:29:54;
+  ends 2 2016/10/25 12:29:54;
+  cltt 2 2016/10/25 06:29:54;
+  binding state active;
+  next binding state free;
+  hardware ethernet 00:06:f6:e6:75:a4;
+  uid "Cisco Systems Inc|+|UCSC-C220-M3S|+|FCH1704V065";
+  set vendor-class-identifier = "android-dhcp-6.0.1";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/12:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C220-FCH1704V065";
+}
+lease 10.126.141.143 {
+  starts 2 2016/10/25 06:29:56;
+  ends 2 2016/10/25 12:29:56;
+  cltt 2 2016/10/25 06:29:56;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:36:50;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3L|+|WZP16430025";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/25:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "C24-A8-AUTOMATION-SELF";
+}
+lease 10.126.141.157 {
+  starts 2 2016/10/25 06:30:04;
+  ends 2 2016/10/25 12:30:04;
+  cltt 2 2016/10/25 06:30:04;
+  binding state active;
+  next binding state free;
+  hardware ethernet a4:4c:11:a1:31:02;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3S2|+|WZP1633000K";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/38:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c24-m3";
+}
+lease 10.126.141.139 {
+  starts 2 2016/10/25 06:30:44;
+  ends 2 2016/10/25 12:30:44;
+  cltt 2 2016/10/25 06:30:44;
+  binding state active;
+  next binding state free;
+  hardware ethernet a4:4c:11:a0:ef:76;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3S2|+|WZP1633000S";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/17:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "Unknown";
+}
+lease 10.126.141.84 {
+  starts 2 2016/10/25 06:30:59;
+  ends 2 2016/10/25 12:30:59;
+  cltt 2 2016/10/25 06:30:59;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9d:2c:80;
+  uid "Cisco Systems Inc|+|UCSC-C220-M3S|+|FCH1535V183";
+  set vendor-class-identifier = "ciscopnp";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/30:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-sl1-test";
+}
+lease 10.126.141.133 {
+  starts 2 2016/10/25 06:31:05;
+  ends 2 2016/10/25 12:31:05;
+  cltt 2 2016/10/25 06:31:05;
+  binding state active;
+  next binding state free;
+  hardware ethernet 30:f7:0d:6d:37:cc;
+  uid "Cisco Systems Inc|+|UCSC-C24-M3S|+|WZP16380036";
+  option agent.circuit-id "SW-ACC-01:Gi1/0/11:vlan141";
+  option agent.remote-id 00:1b:54:7c:a2:80;
+  client-hostname "ucs-c24-m3";
+}
+lease 10.126.141.121 {
+  starts 2 2016/10/25 06:31:05;
+  ends 2 2016/10/25 12:31:05;
+  cltt 2 2016/10/25 06:31:05;
+  binding state active;
+  next binding state free;
+  hardware ethernet 7c:ad:74:6e:cb:7a;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3S|+|FCH1712V09E";
+  set vendor-class-identifier = "udhcp 1.19.4";
+  client-hostname "CIMCFCH1712V09E";
+}
+lease 10.126.141.197 {
+  starts 2 2016/10/25 06:31:53;
+  ends 2 2016/10/25 12:31:53;
+  cltt 2 2016/10/25 06:31:53;
+  binding state active;
+  next binding state free;
+  hardware ethernet 50:3d:e5:9e:12:a4;
+  uid "Cisco Systems Inc|+|UCSC-C240-M3L|+|FCH1610V04V";
+  set vendor-class-identifier = "ciscopnp";
+  client-hostname "C240-FCH1610V04V";
+}
+server-duid "\000\001\000\001\037z=\011\214`O\027TD";
+
