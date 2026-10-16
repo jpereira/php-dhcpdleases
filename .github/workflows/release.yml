@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+
+      - name: Tag must match VERSION
+        run: |
+          [ "v$(cat VERSION)" = "${GITHUB_REF_NAME}" ] || {
+            echo "tag ${GITHUB_REF_NAME} != VERSION $(cat VERSION)"; exit 1; }
+
+      - name: Tests
+        run: make test
+
+      - name: Release notes from CHANGELOG.md
+        run: |
+          scripts/release-notes.sh "$(cat VERSION)" > notes.md
+          [ -s notes.md ] || { echo "no CHANGELOG entry for $(cat VERSION)"; exit 1; }
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag
