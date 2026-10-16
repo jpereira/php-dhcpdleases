@@ -1,5 +1,11 @@
 # php-dhcpdleases
 
+[![CI](https://github.com/jpereira/php-dhcpdleases/actions/workflows/ci.yml/badge.svg)](https://github.com/jpereira/php-dhcpdleases/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/jpereira/php-dhcpdleases?sort=semver)](https://github.com/jpereira/php-dhcpdleases/releases)
+[![PHP](https://img.shields.io/badge/php-%3E%3D8.2-777bb4?logo=php&logoColor=white)](https://www.php.net/)
+[![License](https://img.shields.io/badge/license-LGPL--3.0--or--later-blue)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/jpereira/php-dhcpdleases)](https://github.com/jpereira/php-dhcpdleases/commits/master)
+
 PHP parser for ISC DHCP `dhcpd.leases` files. Reads the leases, then filters, sorts and
 de-duplicates them, returning an array or JSON.
 
@@ -78,6 +84,20 @@ make test   # or: php tests/run.php
 ```
 
 Run `make` to see all targets. Without a local PHP, `make test` falls back to Docker.
+
+## Versioning
+
+[SemVer](https://semver.org/). The current version is in the [VERSION](VERSION) file and in
+`DhcpdLeases::version()`. What changed is in the [CHANGELOG](CHANGELOG.md).
+
+```bash
+make version                # show it
+make bump PART=patch        # patch|minor|major|X.Y.Z: updates VERSION and CHANGELOG.md
+git commit -am "Release v2.0.2" && git tag v2.0.2 && git push --follow-tags
+```
+
+Pushing a `v*` tag runs the release workflow: it checks the tag against `VERSION`, runs the
+tests and creates the GitHub release with the notes from the CHANGELOG.
 
 ## Author
 
