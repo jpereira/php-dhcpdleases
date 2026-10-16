@@ -31,7 +31,16 @@ jobs:
           scripts/release-notes.sh "$(cat VERSION)" > notes.md
           [ -s notes.md ] || { echo "no CHANGELOG entry for $(cat VERSION)"; exit 1; }
 
+      - name: Build zip (git archive, honors .gitattributes export-ignore)
+        run: |
+          name="php-dhcpdleases-$(cat VERSION)"
+          git archive --format=zip --prefix="$name/" -o "$name.zip" HEAD
+          sha256sum "$name.zip" > "$name.zip.sha256"
+
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag
+        run: |
+          name="php-dhcpdleases-$(cat VERSION)"
+          gh release create "$GITHUB_REF_NAME" "$name.zip" "$name.zip.sha256" \
+            --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag
